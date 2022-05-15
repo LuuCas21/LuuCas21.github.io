@@ -66,6 +66,14 @@ function anchor_10() {
     window.open('https://t.me/LuuCas200')
 }
 
+function anchor_11() {
+    window.open('https://codeprologin.netlify.app')
+}
+
+function anchor_12() {
+    window.open('https://github.com/LuuCas21/codePro/tree/main/Login%20Page');
+}
+
 const pt_button = document.getElementById('pt');
 const eng_button = document.getElementById('eng');
 const ptg_text = document.querySelector('.ptg-13');
@@ -227,3 +235,29 @@ function myFunction(x) {
 x.addListener(myFunction);
 
 myFunction(x);
+
+// Mostrar Projetos
+
+const portfolioDiv = document.querySelector('.portfolio--2');
+const arrowDown_1 = document.querySelector('.arrow_down--1');
+const arrowUp_2 = document.querySelector('.arrow_up--2');
+
+arrowDown_1.addEventListener('click', arrowUpDown);
+arrowUp_2.addEventListener('click', arrowUpDown_2);
+
+function arrowUpDown() {
+
+    if(portfolioDiv.classList.contains('disappear')) {
+        portfolioDiv.classList.remove('disappear');
+        arrowUp_2.classList.remove('disappear');
+        arrowDown_1.classList.add('disappear');
+    }
+}
+
+function arrowUpDown_2() {
+    if(!portfolioDiv.classList.contains('disappear')) {
+        portfolioDiv.classList.add('disappear');
+        arrowUp_2.classList.add('disappear');
+        arrowDown_1.classList.remove('disappear');
+    }
+}

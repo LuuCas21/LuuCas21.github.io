@@ -50,6 +50,9 @@ body {
     display:none;
 }
 
+.close-- {
+    display:none;
+}
 /*#logo_name {
     background-color:var(--color1);
 }
@@ -510,6 +513,42 @@ color:var(--color4);
         align-self:center;
         margin:2px 0 !important;
     }
+}
+
+/*.portfolio--2 {
+    display:none !important;
+}*/
+
+#arrow_down {
+    width:50px;
+    height:50px;
+    font-size:36px;
+    border:none;
+    background-color:inherit;
+    color:var(--color11);
+    margin:0 auto;
+    display:block;
+    transition:all 0.2s;
+}
+
+#arrow_up {
+    width:50px;
+    height:50px;
+    font-size:36px;
+    border:none;
+    background-color:inherit;
+    color:var(--color11);
+    margin:0 auto;
+    display:block;
+    transition:all 0.2s;
+}
+
+#arrow_down:hover {
+    transform:scale(1.15);
+}
+
+#arrow_up:hover {
+    transform:scale(1.15);
 }
 
 @media screen and (max-width:900px) {
