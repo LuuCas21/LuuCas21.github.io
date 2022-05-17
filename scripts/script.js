@@ -74,6 +74,12 @@ function anchor_12() {
     window.open('https://github.com/LuuCas21/codePro/tree/main/Login%20Page');
 }
 
+function anchor_13() {
+    /*const anchor = document.createElement('a');
+    anchor.src = './img/MeuCurrículo.pdf';*/
+    window.open('./img/MeuCurrículo.pdf')
+}
+
 const pt_button = document.getElementById('pt');
 const eng_button = document.getElementById('eng');
 const ptg_text = document.querySelector('.ptg-13');
@@ -104,6 +110,8 @@ eng_button.addEventListener('click', function() {
     const eng_10 = document.querySelector('.eng-10');
     const eng_11 = document.querySelector('.eng-11');
     const eng_12 = document.querySelector('.eng-12');
+    const eng_20 = document.querySelector('.eng-20');
+    const eng_21 = document.querySelector('.eng-21');
 
     eng_1.innerHTML = 'Front-end Developer';
     eng_2.innerHTML = 'Projects';
@@ -120,6 +128,8 @@ eng_button.addEventListener('click', function() {
     eng_10.innerHTML = 'Projects';
     eng_11.innerHTML = 'Contacts';
     eng_12.innerHTML = 'About';
+    eng_20.innerHTML = 'CodePro - Login Page';
+    eng_21.innerHTML = 'Technologies used:';
 
     //Sobre
 
@@ -167,6 +177,8 @@ pt_button.addEventListener('click', function() {
     const ptg_10 = document.querySelector('.ptg-10');
     const ptg_11 = document.querySelector('.ptg-11');
     const ptg_12 = document.querySelector('.ptg-12');
+    const ptg_20 = document.querySelector('.ptg-20');
+    const ptg_21 = document.querySelector('.ptg-21');
 
     ptg_1.innerHTML = 'Desenvolvedor Front-end';
     ptg_2.innerHTML = 'Projetos';
@@ -183,6 +195,8 @@ pt_button.addEventListener('click', function() {
     ptg_10.innerHTML = 'Projetos';
     ptg_11.innerHTML = 'Contatos';
     ptg_12.innerHTML = 'Sobre';
+    ptg_20.innerHTML = 'CodePro - Página Login';
+    ptg_21.innerHTML = 'Tecnologias utilizadas:';
 
     if(eng_button.classList.contains('active') && ptg_text && ptg_text2 && ptg_text3 && ptg_text4 && ptg_text5 && ptg_text6 && ptg_text7.classList.contains('disappear')) {
         eng_button.classList.remove('active');
