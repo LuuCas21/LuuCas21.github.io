@@ -84,10 +84,10 @@ function anchor_14() {
     window.open('https://architectportfolio.netlify.app');
 };
 
-/*function anchor_15() {
-    window.open('');
+function anchor_15() {
+    window.open('https://github.com/LuuCas21/NobreArquitetura');
 };
-*/
+
 
 const pt_button = document.getElementById('pt');
 const eng_button = document.getElementById('eng');
