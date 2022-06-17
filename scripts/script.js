@@ -80,6 +80,15 @@ function anchor_13() {
     window.open('./img/MeuCurrículo.pdf')
 }
 
+function anchor_14() {
+    window.open('https://architectportfolio.netlify.app');
+};
+
+/*function anchor_15() {
+    window.open('');
+};
+*/
+
 const pt_button = document.getElementById('pt');
 const eng_button = document.getElementById('eng');
 const ptg_text = document.querySelector('.ptg-13');
@@ -112,6 +121,8 @@ eng_button.addEventListener('click', function() {
     const eng_12 = document.querySelector('.eng-12');
     const eng_20 = document.querySelector('.eng-20');
     const eng_21 = document.querySelector('.eng-21');
+    const eng_22 = document.querySelector('.eng-22');
+    const eng_23 = document.querySelector('.eng-23');
 
     eng_1.innerHTML = 'Front-end Developer';
     eng_2.innerHTML = 'Projects';
@@ -130,6 +141,8 @@ eng_button.addEventListener('click', function() {
     eng_12.innerHTML = 'About';
     eng_20.innerHTML = 'CodePro - Login Page';
     eng_21.innerHTML = 'Technologies used:';
+    eng_22.innerHTML = 'Nobre Architecture - Portfolio';
+    eng_23.innerHTML = 'Technologies used:';
 
     //Sobre
 
@@ -179,6 +192,8 @@ pt_button.addEventListener('click', function() {
     const ptg_12 = document.querySelector('.ptg-12');
     const ptg_20 = document.querySelector('.ptg-20');
     const ptg_21 = document.querySelector('.ptg-21');
+    const ptg_22 = document.querySelector('.ptg-22');
+    const ptg_23 = document.querySelector('.ptg-23');
 
     ptg_1.innerHTML = 'Desenvolvedor Front-end';
     ptg_2.innerHTML = 'Projetos';
@@ -197,6 +212,8 @@ pt_button.addEventListener('click', function() {
     ptg_12.innerHTML = 'Sobre';
     ptg_20.innerHTML = 'CodePro - Página Login';
     ptg_21.innerHTML = 'Tecnologias utilizadas:';
+    ptg_22.innerHTML = 'Nobre Arquitetura - Portfólio';
+    ptg_23.innerHTML = 'Tecnologias utilizadas:';
 
     if(eng_button.classList.contains('active') && ptg_text && ptg_text2 && ptg_text3 && ptg_text4 && ptg_text5 && ptg_text6 && ptg_text7.classList.contains('disappear')) {
         eng_button.classList.remove('active');
@@ -253,6 +270,7 @@ myFunction(x);
 // Mostrar Projetos
 
 const portfolioDiv = document.querySelector('.portfolio--2');
+const portfolioDiv2 = document.querySelector('.portfolio--3')
 const arrowDown_1 = document.querySelector('.arrow_down--1');
 const arrowUp_2 = document.querySelector('.arrow_up--2');
 
@@ -263,6 +281,7 @@ function arrowUpDown() {
 
     if(portfolioDiv.classList.contains('disappear')) {
         portfolioDiv.classList.remove('disappear');
+        portfolioDiv2.classList.remove('disappear');
         arrowUp_2.classList.remove('disappear');
         arrowDown_1.classList.add('disappear');
     }
@@ -271,6 +290,7 @@ function arrowUpDown() {
 function arrowUpDown_2() {
     if(!portfolioDiv.classList.contains('disappear')) {
         portfolioDiv.classList.add('disappear');
+        portfolioDiv2.classList.add('disappear');
         arrowUp_2.classList.add('disappear');
         arrowDown_1.classList.remove('disappear');
     }
