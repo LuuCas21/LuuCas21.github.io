@@ -295,3 +295,9 @@ function arrowUpDown_2() {
         arrowDown_1.classList.remove('disappear');
     }
 }
+
+const title_ = document.querySelectorAll('.title');
+
+title_.forEach(function(title) {
+    title.style.userSelect = 'none';
+});
