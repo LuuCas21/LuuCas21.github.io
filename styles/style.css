@@ -30,6 +30,10 @@ body {
     background-color:var(--color10);
 }
 
+#container {
+    height:100vh !important;
+}
+
 #pt {
     cursor:pointer;
 }
@@ -53,6 +57,15 @@ body {
 .close-- {
     display:none;
 }
+
+/*#mySidenav {
+    border:1px solid white;
+}*/
+
+/*#portfolio_list {
+    border:1px solid white;
+}*/
+
 /*#logo_name {
     background-color:var(--color1);
 }
@@ -644,6 +657,59 @@ color:var(--color4);
         display:flex;
         flex-direction: column;
     }
+}
+
+@media screen and (min-width:1550px) {
+    .side_sobre > #perfil_description > #whoamI {
+        /*border:1px solid white;*/
+        width:40% !important;
+    }
+}
+
+@media screen and (min-width:2520px) {
+    .side_sobre > #perfil_description {
+        /*border:1px solid white;*/
+        width:90% !important;
+        margin:0 auto;
+    }
+
+    /*.side_sobre > #perfil_description > #whoamI {
+        border:1px solid white;
+        width:30% !important;
+    }*/
+}
+
+@media screen and (min-width:2500px) {
+    #mySidenav > #portfolio_list {
+        /*border:1px solid red;*/
+        width:60% !important;
+        display:flex;
+        align-items:center;
+        margin:0 auto;
+    }
+
+    #contact_div > #contact_list {
+        width:60% !important;
+        margin:0 auto;
+    }
+
+    /*#mySidenav > #portfolio_list > #portfolio-- {
+        border:1px solid red;
+    }
+
+    #mySidenav > #portfolio_list > #portfolio-- > #image-- {
+        height:250px !important;
+    }
+
+    #mySidenav > #portfolio_list > #portfolio-- > #image-- > img {
+        height:100% !important;
+    }
+
+    #mySidenav > #portfolio_list > #portfolio-- > #description-- {
+        height:400px !important;
+        border:1px solid white;
+    }*/
+
 }
 
 /*@media screen and (max-width:322px) {
