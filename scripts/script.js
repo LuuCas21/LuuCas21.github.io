@@ -290,8 +290,10 @@ function arrowUpDown() {
     if(portfolioDiv.classList.contains('disappear')) {
         portfolioDiv.classList.remove('disappear');
         //portfolioDiv2.classList.remove('disappear');
-        portfolioDiv2.forEach(portfolio => 
-            portfolio.classList.remove('disappear'));
+        portfolioDiv2.forEach(portfolio => {
+            portfolio.classList.remove('disappear')
+            portfolio.scrollIntoView({behavior: 'smooth'})
+        });
         arrowUp_2.classList.remove('disappear');
         arrowDown_1.classList.add('disappear');
     }
