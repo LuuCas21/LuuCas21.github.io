@@ -88,6 +88,14 @@ function anchor_15() {
     window.open('https://github.com/LuuCas21/NobreArquitetura');
 };
 
+function anchor_16() {
+    window.open('https://epicflix.netlify.app');
+};
+
+function anchor_17() {
+    window.open('https://github.com/LuuCas21/LoukoFlix');
+};
+
 
 const pt_button = document.getElementById('pt');
 const eng_button = document.getElementById('eng');
@@ -270,7 +278,7 @@ myFunction(x);
 // Mostrar Projetos
 
 const portfolioDiv = document.querySelector('.portfolio--2');
-const portfolioDiv2 = document.querySelector('.portfolio--3')
+const portfolioDiv2 = document.querySelectorAll('.portfolio--3');
 const arrowDown_1 = document.querySelector('.arrow_down--1');
 const arrowUp_2 = document.querySelector('.arrow_up--2');
 
@@ -281,7 +289,9 @@ function arrowUpDown() {
 
     if(portfolioDiv.classList.contains('disappear')) {
         portfolioDiv.classList.remove('disappear');
-        portfolioDiv2.classList.remove('disappear');
+        //portfolioDiv2.classList.remove('disappear');
+        portfolioDiv2.forEach(portfolio => 
+            portfolio.classList.remove('disappear'));
         arrowUp_2.classList.remove('disappear');
         arrowDown_1.classList.add('disappear');
     }
@@ -290,7 +300,9 @@ function arrowUpDown() {
 function arrowUpDown_2() {
     if(!portfolioDiv.classList.contains('disappear')) {
         portfolioDiv.classList.add('disappear');
-        portfolioDiv2.classList.add('disappear');
+        //portfolioDiv2.classList.add('disappear');
+        portfolioDiv2.forEach(portfolio => 
+            portfolio.classList.add('disappear'));
         arrowUp_2.classList.add('disappear');
         arrowDown_1.classList.remove('disappear');
     }
