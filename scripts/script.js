@@ -98,6 +98,10 @@ function anchor_18() {
     window.open('https://lucassouzadev.netlify.app/index.html');
 }
 
+function anchor_19() {
+    window.open('https://github.com/LuuCas21/LuuCas21.github.io');
+}
+
 const pt_button = document.getElementById('pt');
 const eng_button = document.getElementById('eng');
 
