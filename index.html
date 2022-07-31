@@ -19,9 +19,9 @@
 <div id="header" class="w-100 h-auto">
     <div id="navbar" class="w-100 h-auto d-flex justify-content-end">
         <div class="w-auto h-auto d-flex justify-content-evenly me-4 mt-2">
-            <span id="pt" style="color:var(--color12)" class="fw-bold fs-5 p-2 active">PT</span>
+            <span id="pt" style="color:var(--color12)" class="pt fw-bold fs-5 p-2 active">PT</span>
             <span style="color:var(--color4)" class="fw-bold fs-5 p-2">/</span>
-            <span id="eng" style="color:var(--color12)" class="fw-bold fs-5 p-2 inactive">EN</span>
+            <span id="eng" style="color:var(--color12)" class="eng fw-bold fs-5 p-2">EN</span>
         </div>
         <!--<div id="logo_name" class="w-50 h-auto d-flex justify-content-center"> 
             <div id="logo_image" class="w-auto h-auto">
@@ -51,11 +51,11 @@
     <div id="introduction" class="w-100 h-50">
         <!--<p class="fs-4 text-center">Olá, eu me chamo</p>-->
         <p class="display-2 text-center fw-bold">Lucas Souza</p>
-        <p style="color:var(--color11)" class="fs-5 text-center eng-1 ptg-1">Desenvolvedor Front-end</p>
+        <p style="color:var(--color11)" class="fs-5 text-center eng--1 pt--1" data-portuguese="Desenvolvedor Front - end" data-english="Front - end Developer">Desenvolvedor Front - end</p>
     <div id="information" class="w-100 h-auto d-flex justify-content-center">
-        <button type="button" id="button--1" onclick="openNav()" class="btn fs-4 fw-bold me-1 eng-2 ptg-2">Projetos</button>
-        <button type="button" id="button--1" onclick="openNav_3()" class="btn fs-4 fw-bold eng-3 ptg-3">Contatos</button>
-        <button type="button" id="button--1" onclick="openNav_2()" class="btn fs-4 fw-bold ms-1 eng-4 ptg-4">Sobre</button>
+        <button type="button" id="button--1" onclick="openNav()" class="btn fs-4 fw-bold me-1 eng--1 pt--1" data-portuguese="Projetos" data-english="Projects">Projetos</button>
+        <button type="button" id="button--1" onclick="openNav_3()" class="btn fs-4 fw-bold eng--1 pt--1" data-portuguese="Contatos" data-english="Contacts">Contatos</button>
+        <button type="button" id="button--1" onclick="openNav_2()" class="btn fs-4 fw-bold ms-1 eng--1 pt--1" data-portuguese="Sobre" data-english="About">Sobre</button>
         <!--<button type="button" id="button--2" onclick="anchor_6()" class="btn fs-4 fw-bold">GitHub</button>-->
     </div>
     </div>
@@ -68,7 +68,7 @@
 <!-- About -->
 <div id="sobre_div" class="side_sobre ">
     <a href="#" class="closebtn" onclick="closeNav_2()">&times;</a>
-    <h2 style="border-bottom:3px solid var(--color11)" id="title" class="display-6 w-50 text-center text-light m-0 m-auto d-block p-5 eng-12 ptg-12">Sobre</h2> 
+    <h2 style="border-bottom:3px solid var(--color11)" id="title" class="display-6 w-50 text-center text-light m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Sobre" data-english="About">Sobre</h2> 
     <div id="perfil_description" class="w-100 h-auto mb-5 mt-5 d-flex justify-content-center">
         <div id="whoamI" class="w-50 h-auto me-5">
             <!--<div id="picture" class="w-50 h-75 m-4"></div> -->
@@ -78,17 +78,22 @@
                 </div>
                 <div id="me-1" class="w-100">
                 <p class="display-6 fw-bold mt-5 text-center">Lucas Souza</p>
-                <p style="color:var(--color11)" class="fs-6 ms-1 text-center ptg-19">- Desenvolvedor Front-end</p>
-                <p style="color:var(--color11)" class="fs-6 ms-1 text-center eng-19 disappear">- Front-end Developer</p>
+                <p style="color:var(--color11)" class="fs-6 ms-1 text-center eng--1 pt--1" data-portuguese="- Desenvolvedor Front - end" data-english="- Front - end Developer">- Desenvolvedor Front - end</p>
                 </div>
             </div>-->
             <div id="descriptionAboutMe" class="w-100 h-auto ">
-            <p class="fs-5 ptg-18">Me chamo Lucas, e moro no Rio. Há pouco tempo engressei na área de Desenvolvedor Front end. Estudar é praticamente um Hobby para mim
+            <p class="fs-5 ptg-18 eng--1 pt--1" data-portuguese="Me chamo Lucas, e moro no Rio. Há pouco tempo engressei na área de Desenvolvedor Front end. Estudar é praticamente um Hobby para mim
+            e por este motivo que acabei me apaixonando pela área de tecnologia e sei que cada Desenvolvedor deve estar sempre informado de novas atualizações e
+            tecnologias do momento, e sei que na Internet há uma ampla quantidade de conteúdos disponíveis fazendo com que eu consiga aprender qualquer coisa."
+            
+            data-english="My name is Lucas, and I live in Rio. It's been just recently I got myself into the Front-end web development. Studying is like a Hobby for me and because of that 
+            I fell in love for that tech field and I am sure that every developer must be always up-to-date about new updates as well as trending technologies of the moment, and also 
+            I am sure that in the internet there are plenty of available contents allowing me to learn anything I want.">
+            
+            Me chamo Lucas, e moro no Rio. Há pouco tempo engressei na área de Desenvolvedor Front end. Estudar é praticamente um Hobby para mim
             e por este motivo que acabei me apaixonando pela área de tecnologia e sei que cada Desenvolvedor deve estar sempre informado de novas atualizações e
             tecnologias do momento, e sei que na Internet há uma ampla quantidade de conteúdos disponíveis fazendo com que eu consiga aprender qualquer coisa.</p>
-            <p class="fs-5 eng-18 disappear">My name is Lucas, and I live in Rio. It's been just recently I got myself into the Front-end web development. Studying is like a Hobby for me and because of that 
-            I fell in love for that tech field and I am sure that every developer must be always up-to-date about new updates as well as trending technologies of the moment, and also 
-            I am sure that in the internet there are plenty of available contents allowing me to learn anything I want.</p>
+            
             </div> 
         </div>
         <div id="tools" style="margin-top:25px !important" class="w-25 h-75">
@@ -99,8 +104,8 @@
                 </h2>
                 <div class="accordion-collapse collapse accord--" id="accordionOne">
                     <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 ptg-13"><span style="color:var(--color11)">HTML</span> me permite criar toda a parte <span style="color:var(--color11)">esquelética</span> do meu site e também criar o <span style="color:var(--color11)">conteúdo</span> incluso nele.</p>
-                        <p class="fs-5 eng-13 disappear"><span style="color:var(--color11)">HTML</span> allows me to create the whole website's <span id="green" style="color:var(--color11)">body</span> as well as creating the <span id="green" style="color:var(--color11)">content</span> within it.</p>
+                        <p class="fs-5 pt--3"><span style="color:var(--color11)">HTML</span> me permite criar toda a parte <span style="color:var(--color11)">esquelética</span> do meu site e também criar o <span style="color:var(--color11)">conteúdo</span> incluso nele.</p>
+                        <p class="fs-5 eng--3 disappear"><span style="color:var(--color11)">HTML</span> allows me to create the whole website's <span id="green" style="color:var(--color11)">body</span> as well as creating the <span id="green" style="color:var(--color11)">content</span> within it.</p>
                     </div>
                 </div>
             </div>
@@ -112,9 +117,9 @@
                 </h2>
                 <div class="accordion-collapse collapse accord--" id="accordionTwo">
                     <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 ptg-14"><span style="color:var(--color11)">CSS</span> me permite trabalhar com vastos aspectos de um site, variando de <span style="color:var(--color11)">estilização</span> até <span style="color:var(--color11)">responsividade</span>.
+                        <p class="fs-5 pt--3"><span style="color:var(--color11)">CSS</span> me permite trabalhar com vastos aspectos de um site, variando de <span style="color:var(--color11)">estilização</span> até <span style="color:var(--color11)">responsividade</span>.
                         Ele me permite trabalhar com o <span style="color:var(--color11)">estilo</span> da página e seus <span style="color:var(--color11)">efeitos</span> e também ajustar a todas as <span style="color:var(--color11)">resoluções</span>.</p>
-                        <p class="fs-5 eng-14 disappear"><span style="color:var(--color11)">CSS</span> allows me to work with a big amount of a website's aspect, ranging from <span style="color:var(--color11)">styling</span> to <span style="color:var(--color11)">responsiveness</span> It allows me to work with the <span style="color:var(--color11)">style</span> of the page as well as its <span style="color:var(--color11)">effects</span> and also align it to any <span style="color:var(--color11)">resolution</span>.</p>
+                        <p class="fs-5 eng--3 disappear"><span style="color:var(--color11)">CSS</span> allows me to work with a big amount of a website's aspect, ranging from <span style="color:var(--color11)">styling</span> to <span style="color:var(--color11)">responsiveness</span> It allows me to work with the <span style="color:var(--color11)">style</span> of the page as well as its <span style="color:var(--color11)">effects</span> and also align it to any <span style="color:var(--color11)">resolution</span>.</p>
                     </div>
                 </div>
             </div>
@@ -126,8 +131,8 @@
                 </h2>
                 <div class="accordion-collapse collapse accord--" id="accordionThree">
                     <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 ptg-15"><span style="color:var(--color11)">Javascript</span> torna a página mais <span style="color:var(--color11)">interativa</span> com o usuário. Assim consigo deixar o site mais <span style="color:var(--color11)">dinâmico</span> e <span style="color:var(--color11)">interativo</span>.</p>
-                        <p class="fs-5 eng-15 disappear">Javascript allows the web page to be more <span style="color:var(--color11)">interactive</span> with the user. This way I can make a more <span style="color:var(--color11)">dynamic</span> and <span style="color:var(--color11)">interactive</span> website as well.</p>
+                        <p class="fs-5 pt--3"><span style="color:var(--color11)">Javascript</span> torna a página mais <span style="color:var(--color11)">interativa</span> com o usuário. Assim consigo deixar o site mais <span style="color:var(--color11)">dinâmico</span> e <span style="color:var(--color11)">interativo</span>.</p>
+                        <p class="fs-5 eng--3 disappear">Javascript allows the web page to be more <span style="color:var(--color11)">interactive</span> with the user. This way I can make a more <span style="color:var(--color11)">dynamic</span> and <span style="color:var(--color11)">interactive</span> website as well.</p>
                     </div>
                 </div>
             </div>
@@ -152,8 +157,8 @@
                 </h2>
                 <div class="accordion-collapse collapse accord--" id="accordionFive">
                     <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 ptg-17"><span style="color:var(--color11)">React</span> é um framework <span style="color:var(--color11)">JavaScript</span> criado pelo <span style="color:var(--color11)">Facebook</span> e que comecei a estudar há pouco tempo e ainda estou cobrindo a parte dos fundamentos. Ele me permitirá escrever códigos Javascript mais <span style="color:var(--color11)">rápidos</span> e de maior <span style="color:var(--color11)">qualidade</span>.</p>
-                        <p class="fs-5 eng-17 disappear"><span style="color:var(--color11)">React</span> is a <span style="color:var(--color11)">Javascript framework</span> created by <span style="color:var(--color11)">Facebook</span> and that I just started out to learn and I'm still covering the fundamental parts. It will allow me to write <span style="color:var(--color11)">fast</span> and <span style="color:var(--color11)">better-quality</span> javascript coding.</p>
+                        <p class="fs-5 pt--3"><span style="color:var(--color11)">React</span> é um framework <span style="color:var(--color11)">JavaScript</span> criado pelo <span style="color:var(--color11)">Facebook</span> e que comecei a estudar há pouco tempo e ainda estou cobrindo a parte dos fundamentos. Ele me permitirá escrever códigos Javascript mais <span style="color:var(--color11)">rápidos</span> e de maior <span style="color:var(--color11)">qualidade</span>.</p>
+                        <p class="fs-5 eng--3 disappear"><span style="color:var(--color11)">React</span> is a <span style="color:var(--color11)">Javascript framework</span> created by <span style="color:var(--color11)">Facebook</span> and that I just started out to learn and I'm still covering the fundamental parts. It will allow me to write <span style="color:var(--color11)">fast</span> and <span style="color:var(--color11)">better-quality</span> javascript coding.</p>
                     </div>
                 </div>
             </div>
@@ -176,15 +181,15 @@
 <!-- Portfolio -->
 <div id="mySidenav" class="sidenav">
 <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-<h2 style="border-bottom:3px solid var(--color11)" id="title" class="display-6 w-50 text-light text-center m-0 m-auto d-block p-5 eng-10 ptg-10">Projetos</h2>
+<h2 style="border-bottom:3px solid var(--color11)" id="title" class="display-6 w-50 text-light text-center m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Projetos" data-english="Projects" >Projetos</h2>
 <div id="portfolio_list" class="w-100 h-auto d-flex  justify-content-center flex-wrap mt-5 mb-5"> <!-- Flex Wrap -->
 <div id="portfolio--" class="w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4">
         <img src="/img/portfolio--1.png">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-5 ptg-5 title">Salão do Brooklyn</h4>
-        <p class="fs-5 fw-bold text-light text-center eng-6 ptg-6 title">Tecnologias utilizadas:</p>
+        <h4 class="fw-bold text-center eng--1 pt--1 title" data-portuguese="Salão do Brooklyn" data-english="Brooklyn Hair saloon">Salão do Brooklyn</h4>
+        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
         <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> Bootstrap</p>
         <div id="checkPort" class="w-100 h-auto d-flex justify-content-center mt-5">
             <button type="button" id="button--3" onclick="anchor_1()" class="btn btn-light me-2 fw-bold">Live</button>
@@ -198,7 +203,7 @@
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center title">5 Senses Art</h4>
-        <p class="fs-5 fw-bold text-light text-center eng-7 ptg-7 title">Tecnologias utilizadas:</p>
+        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
         <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> Bootstrap</p>
         <div id="checkPort" class="d-flex justify-content-center mt-5">
             <button type="button" id="button--5" onclick="anchor_3()" class="btn btn-light me-2 fw-bold">Live</button>
@@ -211,8 +216,8 @@
         <img src="/img/portfolio--3.png">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-8 ptg-8 title">Orkut - Página Login</h4>
-        <p class="fs-5 fw-bold text-light text-center eng-9 ptg-9 title">Tecnologias utilizadas:</p>
+        <h4 class="fw-bold text-center eng-8 ptg-8 title eng--1 pt--1" data-portuguese="Orkut - Página Login" data-english="Orkut - Login Page">Orkut - Página Login</h4>
+        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
         <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS</p>
         <div id="checkPort" class="d-flex justify-content-center mt-5">
             <button type="button" id="button--3" onclick="anchor_7()" class="btn btn-light me-2 fw-bold">Live</button>
@@ -221,13 +226,13 @@
     </div>
 </div>
 
-<div id="portfolio--" class="portfolio--2 disappear w-25 m-4" class="portfolio--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
+<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4">
         <img src="/img/CodePro.png">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-20 ptg-20 title">CodePro - Página Login</h4>
-        <p class="fs-5 fw-bold text-light text-center eng-21 ptg-21 title">Tecnologias utilizadas:</p>
+        <h4 class="fw-bold text-center eng-20 ptg-20 title eng--1 pt--1" data-portuguese="CodePro - Página Login" data-english="CodePro - Login Page">CodePro - Página Login</h4>
+        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
         <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
         <div id="checkPort" class="d-flex justify-content-center mt-5">
             <button type="button" id="button--3" onclick="anchor_11()" class="btn btn-light me-2 fw-bold">Live</button>
@@ -236,13 +241,13 @@
     </div>
 </div>
 <!-- Edit -->
-<div id="portfolio--" class="portfolio--3 disappear w-25 m-4" class="portfolio--3 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
+<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4">
         <img src="/img/portfolio--5.png">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-22 ptg-22 title">Nobre Arquitetura - Portfólio</h4>
-        <p class="fs-5 fw-bold text-light text-center eng-23 ptg-23 title">Tecnologias utilizadas:</p>
+        <h4 class="fw-bold text-center eng-22 ptg-22 title eng--1 pt--1" data-portuguese="Nobre Arquitetura - Portfólio" data-english="Noble Architecture - Portfolio">Nobre Arquitetura - Portfólio</h4>
+        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
         <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
         <div id="checkPort" class="d-flex justify-content-center mt-5">
             <button type="button" id="button--3" onclick="anchor_14()" class="btn btn-light me-2 fw-bold">Live</button>
@@ -250,18 +255,31 @@
         </div>
     </div>
 </div>
-
-<div id="portfolio--" class="portfolio--3 disappear w-25 m-4" class="portfolio--3 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4">
+<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
+    <div id="image--" class="mt-4"> 
         <img src="/img/portfolio--6.png">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center eng-22 ptg-22 title">Epic Flix</h4>
-        <p class="fs-5 fw-bold text-light text-center eng-23 ptg-23 title">Tecnologias utilizadas:</p>
+        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
         <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
         <div id="checkPort" class="d-flex justify-content-center mt-5">
             <button type="button" id="button--3" onclick="anchor_16()" class="btn btn-light me-2 fw-bold">Live</button>
             <button type="button" id="button--4" onclick="anchor_17()" class="btn btn-light fw-bold">Repo</button>
+        </div>
+    </div>
+</div>
+<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
+    <div id="image--" class="mt-4"> 
+        <img src="/img/portfolio--7.png">
+    </div>
+    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
+        <h4 class="fw-bold text-center eng-22 ptg-22 title">Blog - Lucas Souza</h4>
+        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
+        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
+        <div id="checkPort" class="d-flex justify-content-center mt-5">
+            <button type="button" id="button--3" onclick="anchor_18()" class="btn btn-light me-2 fw-bold">Live</button>
+            <button type="button" id="button--4" onclick="anchor_19()" class="btn btn-light fw-bold">Repo</button>
         </div>
     </div>
 </div>
@@ -277,7 +295,7 @@
 <!-- Contact -->
 <div id="contact_div" class="side_contact">
     <a href="#" class="closebtn" onclick="closeNav_3()">&times;</a>
-    <h2 id="title" style="border-bottom:3px solid var(--color11)" class="display-6 w-50 text-center text-light m-0 m-auto d-block p-5 eng-11 ptg-11">Contatos</h2> <!-- style="margin-left:140px" -->
+    <h2 id="title" style="border-bottom:3px solid var(--color11)" class="display-6 w-50 text-center text-light m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Contatos" data-english="Contacts">Contatos</h2> <!-- style="margin-left:140px" -->
     <div id="contact_list" class="w-100 h-auto mt-5 mb-5 d-flex justify-content-evenly">
         <span onclick="window.open('mailto:LucasRSouza2000@outlook.com')" class="fa fa-envelope text-center pt-5 align-self-center"></span>
         <span onclick="window.open('tel:+5521987964175')" class="fa fa-mobile-phone text-center pt-5 align-self-center"></span>

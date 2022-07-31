@@ -40,18 +40,15 @@ body {
 
 #eng {
     cursor:pointer;
+    color:#01c38c5e;
 }
 
 .active {
     color:#01C38D !important;
 }
 
-.inactive {
-    color:#01c38c5e !important;
-}
-
 .disappear {
-    display:none;
+    display:none !important;
 }
 
 .close-- {
@@ -92,7 +89,7 @@ body {
     color:var(--color3);
 }
 */
-#body_content {
+#body_content { 
     background-color:var(--color10);
     height:525px !important;
 }
