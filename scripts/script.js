@@ -114,6 +114,10 @@ const pt_2 = document.querySelectorAll('.pt--2');
 const eng_1 = document.querySelectorAll('.eng--1');
 // Salão do Brooklyn - Tradução
 const pt_1 = document.querySelectorAll('.pt--1');
+// Input English
+const eng_input = document.querySelectorAll('.engInput--1');
+// input Portuguese
+const pt_input = document.querySelectorAll('.ptInput--1');
 
 // Programming Languages Description - Translation
 const eng_3 = document.querySelectorAll('.eng--3');
@@ -139,6 +143,11 @@ function ptTranslation() {
     pt_1.forEach(p => {
         const dataTranslation = p.dataset.portuguese;
         p.innerHTML = dataTranslation;
+    })
+
+    pt_input.forEach(pt => {
+        const dataTranslation = pt.dataset.portuguese;
+        pt.setAttribute('placeholder', dataTranslation);
     })
 
     pt_3.forEach(pt => {
@@ -168,6 +177,11 @@ function engTranslation() {
     eng_1.forEach(e => {
         const dataTranslation = e.dataset.english;
         e.innerHTML = dataTranslation;
+    })
+
+    eng_input.forEach(en => {
+        const dataTranslation = en.dataset.english;
+        en.setAttribute('placeholder', dataTranslation);
     })
 
     eng_3.forEach(e => {

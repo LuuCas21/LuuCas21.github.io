@@ -259,13 +259,12 @@
     <div id="contact_list" class="w-75 h-auto mt-5 mb-5 d-flex justify-content-evenly">
         <div id="emailForm">
             <form action="https://formsubmit.co/00950671ec60f8f735d3818ee0742b1b" method="POST">
-                <input type="text" id="name" name="Name" placeholder="Nome Completo" required>
+                <input type="text" id="name" name="Name" placeholder="Nome Completo" data-portuguese="Nome Completo" data-english="Full Name" class="engInput--1 ptInput--1" required>
                 <input type="email" id="email" name="Email" placeholder="Email" required>
-                <input type="text" id="subject" name="Subject" placeholder="Assunto" required>
-                <textarea type="message" id="message" name="Message" placeholder="Mensagem . . ." required></textarea>
-                <button type="submit">Enviar</button>
+                <input type="text" id="subject" name="Subject" placeholder="Assunto" required data-portuguese="Assunto" data-english="Subject" class="engInput--1 ptInput--1">
+                <textarea type="message" id="message" name="Message" placeholder="Mensagem . . ." required data-portuguese="Mensagem . . ." data-english="Message . . ." class="engInput--1 ptInput--1"></textarea>
+                <button type="submit" data-portuguese="Enviar" data-english="Send" class="engInput--1 ptInput--1">Enviar</button>
             </form>
-            
         </div>
     </div>
 </div>
