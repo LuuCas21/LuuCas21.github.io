@@ -99,7 +99,7 @@ function anchor_18() {
 }
 
 function anchor_19() {
-    window.open('https://github.com/LuuCas21/LuuCas21.github.io');
+    window.open('https://github.com/LuuCas21/Blog-Pessoal');
 }
 
 const pt_button = document.getElementById('pt');

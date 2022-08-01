@@ -23,20 +23,6 @@
             <span style="color:var(--color4)" class="fw-bold fs-5 p-2">/</span>
             <span id="eng" style="color:var(--color12)" class="eng fw-bold fs-5 p-2">EN</span>
         </div>
-        <!--<div id="logo_name" class="w-50 h-auto d-flex justify-content-center"> 
-            <div id="logo_image" class="w-auto h-auto">
-                <a href="#"><img src="/img/logo-name--3.png"></a>
-            </div>
-        </div>-->
-        <!--<div id="nav_menus" class="w-50 h-auto">
-            <ul>
-                <a href="index.html" class="fs-5">Home</a></li>
-                
-                <li><a href="#" onclick="openNav()" class="fs-5">Projetos</a></li>
-                <li><a href="#" onclick="openNav_3()" class="fs-5">Contato</a></li>
-                <li><a href="#" onclick="openNav_2()" class="fs-5">Sobre</a></li>
-            </ul>
-        </div>-->
     </div>
 </div>
 <!-- End Header -->
@@ -44,26 +30,16 @@
 <div id="body_content" class="w-100 h-auto d-flex flex-column ">
     <div id="logo--side" class="w-50 h-auto mt-1 p-5 align-self-center">
         <img src="/img/LS3.png" class="m-0 m-auto d-block">
-        <!--<video height="100" width="400" autoplay muted class="m-0 m-auto d-block">
-            <source src="/img/animated2.mp4">
-        </video>-->
     </div>
     <div id="introduction" class="w-100 h-50">
-        <!--<p class="fs-4 text-center">Olá, eu me chamo</p>-->
         <p class="display-2 text-center fw-bold">Lucas Souza</p>
         <p style="color:var(--color11)" class="fs-5 text-center eng--1 pt--1" data-portuguese="Desenvolvedor Front - end" data-english="Front - end Developer">Desenvolvedor Front - end</p>
     <div id="information" class="w-100 h-auto d-flex justify-content-center">
         <button type="button" id="button--1" onclick="openNav()" class="btn fs-4 fw-bold me-1 eng--1 pt--1" data-portuguese="Projetos" data-english="Projects">Projetos</button>
-        <button type="button" id="button--1" onclick="openNav_3()" class="btn fs-4 fw-bold eng--1 pt--1" data-portuguese="Contatos" data-english="Contacts">Contatos</button>
+        <button type="button" id="button--1" onclick="openNav_3()" class="btn fs-4 fw-bold eng--1 pt--1" data-portuguese="Contato" data-english="Contact">Contato</button>
         <button type="button" id="button--1" onclick="openNav_2()" class="btn fs-4 fw-bold ms-1 eng--1 pt--1" data-portuguese="Sobre" data-english="About">Sobre</button>
-        <!--<button type="button" id="button--2" onclick="anchor_6()" class="btn fs-4 fw-bold">GitHub</button>-->
     </div>
     </div>
-    <!--<div id="logo--side" class="w-25 h-auto mt-5">
-        <video id="myVideo" autoplay loop muted>
-        <source src="img/logo_side--11.mp4" type="video/mp4"> logo--side5.png
-        </video>
-    </div>-->
 </div>
 <!-- About -->
 <div id="sobre_div" class="side_sobre ">
@@ -137,19 +113,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="accordion accordion-flush mt-2">
-            <div style="background-color:var(--color2);border:none !important" class="accordion-item">
-                <h2 class="accordion-header">
-                    <button id="accordion_button" type="button" class="btn accordion-button fs-5" data-bs-target="#accordionFour" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordionFour"><span style="color:var(--color11)" class="devicon-php-plain me-3 fs-1"></span>PHP</button>
-                </h2>
-                <div class="accordion-collapse collapse accord--" id="accordionFour">
-                    <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 ptg-16"><span style="color:var(--color11)">PHP</span> é uma linguagem de programação <span style="color:var(--color11)">server-side,</span> com ele eu consigo trabalhar com a parte do <span style="color:var(--color11)">backend,</span> assim eu posso trabalhar com <span style="color:var(--color11)">banco de dados</span> e consequentemente deixar o site mais <span style="color:var(--color11)">dinâmico</span>.</p>
-                        <p class="fs-5 eng-16 disappear"><span style="color:var(--color11)">Bootstrap</span> is a framework created by <span style="color:var(--color11)">Twitter employees</span> and it allows me to have more <span style="color:var(--color11)">speed</span> at creating my <span style="color:var(--color11)">front-end projects</span>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>-->
         <div class="accordion accordion-flush mt-2">
             <div style="background-color:var(--color2);border:none !important" class="accordion-item">
                 <h2 class="accordion-header">
@@ -163,9 +126,6 @@
                 </div>
             </div>
         </div>
-        <!--<button id="resume_btn" class="fa fa-file-pdf-o me-3">
-            <span>Currículo</span>
-        </button>-->
         <div class="accordion accordion-flush mt-2">
             <div style="background-color:var(--color2);border:none !important" class="accordion-item">
                 <h2 class="accordion-header">
@@ -295,12 +255,18 @@
 <!-- Contact -->
 <div id="contact_div" class="side_contact">
     <a href="#" class="closebtn" onclick="closeNav_3()">&times;</a>
-    <h2 id="title" style="border-bottom:3px solid var(--color11)" class="display-6 w-50 text-center text-light m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Contatos" data-english="Contacts">Contatos</h2> <!-- style="margin-left:140px" -->
-    <div id="contact_list" class="w-100 h-auto mt-5 mb-5 d-flex justify-content-evenly">
-        <span onclick="window.open('mailto:LucasRSouza2000@outlook.com')" class="fa fa-envelope text-center pt-5 align-self-center"></span>
-        <span onclick="window.open('tel:+5521987964175')" class="fa fa-mobile-phone text-center pt-5 align-self-center"></span>
-        <span onclick="anchor_5()" class="fa fa-linkedin-square text-center pt-5 align-self-center"></span>
-        <span onclick="anchor_10()" class="fa fa-telegram text-center pt-5 align-self-center"></span>
+    <h2 id="title" style="border-bottom:3px solid var(--color11)" class="display-6 w-50 text-center text-light m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Contato" data-english="Contact">Contato</h2> <!-- style="margin-left:140px" -->
+    <div id="contact_list" class="w-75 h-auto mt-5 mb-5 d-flex justify-content-evenly">
+        <div id="emailForm">
+            <form action="https://formsubmit.co/00950671ec60f8f735d3818ee0742b1b" method="POST">
+                <input type="text" id="name" name="Name" placeholder="Nome Completo" required>
+                <input type="email" id="email" name="Email" placeholder="Email" required>
+                <input type="text" id="subject" name="Subject" placeholder="Assunto" required>
+                <textarea placeholder="Mensagem . . ." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            
+        </div>
     </div>
 </div>
 <!-- End Contact -->
