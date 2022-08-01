@@ -421,7 +421,7 @@ color:var(--color4);
 
 #contact_div > #contact_list > #emailForm > form > textarea{
     margin:5px 5px;
-    text-indent:10px;
+    padding:10px;
     width:100%;
     height:120px;
     border:1px solid var(--color11);
