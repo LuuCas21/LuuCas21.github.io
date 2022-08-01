@@ -118,6 +118,10 @@ const pt_1 = document.querySelectorAll('.pt--1');
 const eng_input = document.querySelectorAll('.engInput--1');
 // input Portuguese
 const pt_input = document.querySelectorAll('.ptInput--1');
+// English Button Input
+const englishBtnInput = document.querySelector('.engBtnInput--1');
+// Portuguese Button Input
+const portugueseBtnInput = document.querySelector('.ptBtnInput--1');
 
 // Programming Languages Description - Translation
 const eng_3 = document.querySelectorAll('.eng--3');
@@ -148,8 +152,10 @@ function ptTranslation() {
     pt_input.forEach(pt => {
         const dataTranslation = pt.dataset.portuguese;
         pt.setAttribute('placeholder', dataTranslation);
-        pt.innerHTML = dataTranslation;
     })
+    
+    const dataTranslationButton = portugueseBtnInput.dataset.portuguese;
+    portugueseBtnInput.innerHTML = dataTranslationButton;
 
     pt_3.forEach(pt => {
         if(pt.classList.contains('disappear')) {
@@ -185,6 +191,9 @@ function engTranslation() {
         en.setAttribute('placeholder', dataTranslation);
         en.innerHTML = dataTranslation;
     })
+    
+    const dataTranslationButton = englishBtnInput.dataset.english;
+    englishBtnInput.innerHTML = dataTranslationButton;
 
     eng_3.forEach(e => {
         if(e.classList.contains('disappear')) {
