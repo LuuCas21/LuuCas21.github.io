@@ -148,6 +148,7 @@ function ptTranslation() {
     pt_input.forEach(pt => {
         const dataTranslation = pt.dataset.portuguese;
         pt.setAttribute('placeholder', dataTranslation);
+        pt.innerHTML = dataTranslation;
     })
 
     pt_3.forEach(pt => {
@@ -182,6 +183,7 @@ function engTranslation() {
     eng_input.forEach(en => {
         const dataTranslation = en.dataset.english;
         en.setAttribute('placeholder', dataTranslation);
+        en.innerHTML = dataTranslation;
     })
 
     eng_3.forEach(e => {
