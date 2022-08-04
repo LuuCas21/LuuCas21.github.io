@@ -277,14 +277,20 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 sectionObserver.observe(sections);
 
-function myFunction2(y) {
-  if (y.matches) { // If media query matches
-    sectionObserver.unobserve(sections)
-  } else {
-    sectionObserver.observe(sections)
-  }
-}
+const x = window.matchMedia('(max-width: 900px)');
 
-var y = window.matchMedia("(max-width: 700px)")
-myFunction2(y) // Call listener function at run time
-y.addListener(myFunction2) // Attach listener function on state changes
+function myFunction(x) {
+    for(let i = 0; i < accordion_div.length; i++) {
+        if(x.matches) {
+            accordion_div[i].style.display = 'block';
+            sectionObserver.unobserve(sections)
+        } else {
+            sectionObserver.observe(sections)
+        }
+    };
+};
+
+//myFunction(x);
+x.addListener(myFunction);
+
+myFunction(x);
