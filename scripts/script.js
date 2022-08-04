@@ -118,10 +118,6 @@ const pt_1 = document.querySelectorAll('.pt--1');
 const eng_input = document.querySelectorAll('.engInput--1');
 // input Portuguese
 const pt_input = document.querySelectorAll('.ptInput--1');
-// English Button Input
-const englishBtnInput = document.querySelector('.engBtnInput--1');
-// Portuguese Button Input
-const portugueseBtnInput = document.querySelector('.ptBtnInput--1');
 
 // Programming Languages Description - Translation
 const eng_3 = document.querySelectorAll('.eng--3');
@@ -153,9 +149,6 @@ function ptTranslation() {
         const dataTranslation = pt.dataset.portuguese;
         pt.setAttribute('placeholder', dataTranslation);
     })
-    
-    const dataTranslationButton = portugueseBtnInput.dataset.portuguese;
-    portugueseBtnInput.innerHTML = dataTranslationButton;
 
     pt_3.forEach(pt => {
         if(pt.classList.contains('disappear')) {
@@ -189,11 +182,7 @@ function engTranslation() {
     eng_input.forEach(en => {
         const dataTranslation = en.dataset.english;
         en.setAttribute('placeholder', dataTranslation);
-        en.innerHTML = dataTranslation;
     })
-    
-    const dataTranslationButton = englishBtnInput.dataset.english;
-    englishBtnInput.innerHTML = dataTranslationButton;
 
     eng_3.forEach(e => {
         if(e.classList.contains('disappear')) {
@@ -240,7 +229,6 @@ function arrowUpDown() {
     portfolioDiv2.forEach(ports => {
         if(ports.classList.contains('disappear')) {
             ports.classList.remove('disappear');
-            ports.scrollIntoView({behavior: 'smooth'});
         }
     })
 
@@ -264,3 +252,27 @@ const title_ = document.querySelectorAll('.title');
 title_.forEach(function(title) {
     title.style.userSelect = 'none';
 });
+
+
+// Reveal Elements
+
+const contact_div = document.querySelector('#contact_div');
+const sections = document.querySelector('.section');
+
+const revealSection = function(entries, observer) {
+    entries.forEach(entry => {
+        console.log(entry);
+
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('section--hidden');
+            observer.unobserve(entry.target);
+        }
+    })
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+    roo: null,
+    threshold: 0
+});
+
+sectionObserver.observe(sections);
