@@ -277,14 +277,14 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 sectionObserver.observe(sections);
 
-function myFunction(x) {
-  if (x.matches) { // If media query matches
+function myFunction_10(y) {
+  if (y.matches) { // If media query matches
     sectionObserver.unobserve(sections);
   } else {
     sectionObserver.observe(sections);
   }
 }
 
-var x = window.matchMedia("(max-width: 1000px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var y = window.matchMedia("(max-width: 1000px)")
+myFunction(y) // Call listener function at run time
+y.addListener(myFunction) // Attach listener function on state changes
