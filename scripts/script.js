@@ -279,12 +279,12 @@ sectionObserver.observe(sections);
 
 function myFunction2(y) {
   if (y.matches) { // If media query matches
-    sectionObserver.observe(sections)
-  } else {
     sectionObserver.unobserve(sections)
+  } else {
+    sectionObserver.observe(sections)
   }
 }
 
-var y = window.matchMedia("(max-width: 1000px)")
+var y = window.matchMedia("(max-width: 700px)")
 myFunction2(y) // Call listener function at run time
 y.addListener(myFunction2) // Attach listener function on state changes
