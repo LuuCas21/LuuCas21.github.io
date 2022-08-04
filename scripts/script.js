@@ -279,9 +279,9 @@ sectionObserver.observe(sections);
 
 function myFunction2(y) {
   if (y.matches) { // If media query matches
-    sectionObserver.unobserve(sections)
-  } else {
     sectionObserver.observe(sections)
+  } else {
+    sectionObserver.unobserve(sections)
   }
 }
 
