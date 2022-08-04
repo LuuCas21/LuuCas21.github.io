@@ -272,7 +272,7 @@ const revealSection = function(entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
     roo: null,
-    threshold: 0
+    threshold: 0.25
 });
 
 sectionObserver.observe(sections);
