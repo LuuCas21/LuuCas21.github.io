@@ -262,8 +262,6 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 sectionObserver.observe(sections);
 
-const x = window.matchMedia('(max-width: 900px)');
-
 function myFunction(x) {
     for(let i = 0; i < accordion_div.length; i++) {
         if(x.matches) {
@@ -275,7 +273,6 @@ function myFunction(x) {
     };
 };
 
-//myFunction(x);
-x.addListener(myFunction);
-
+const x = window.matchMedia('(max-width: 900px)');
 myFunction(x);
+x.addListener(myFunction);
