@@ -200,6 +200,21 @@ pt_button.addEventListener('click', ptTranslation);
 
 const accordion_div = document.querySelectorAll('.accord--');
 
+const x = window.matchMedia('(max-width: 900px)');
+
+function myFunction(x) {
+    for(let i = 0; i < accordion_div.length; i++) {
+        if(x.matches) {
+            accordion_div[i].style.display = 'block';
+        }
+    };
+};
+
+//myFunction(x);
+x.addListener(myFunction);
+
+myFunction(x);
+
 // Mostrar Projetos
 
 const portfolioDiv2 = document.querySelectorAll('.portfolioDiv--2');
@@ -262,17 +277,14 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 sectionObserver.observe(sections);
 
-function myFunction(x) {
-    for(let i = 0; i < accordion_div.length; i++) {
-        if(x.matches) {
-            accordion_div[i].style.display = 'block';
-            sectionObserver.unobserve(sections)
-        } else {
-            sectionObserver.observe(sections)
-        }
-    };
-};
-
-const x = window.matchMedia('(max-width: 900px)');
-myFunction(x);
-x.addListener(myFunction);
+function myFunction_10(y) {
+    if (y.matches) { // If media query matches
+      sectionObserver.unobserve(sections);
+    } else {
+      sectionObserver.observe(sections);
+    }
+  }
+  
+  var y = window.matchMedia("(max-width: 1000px)")
+  myFunction_10(y) // Call listener function at run time
+  y.addListener(myFunction_10)
