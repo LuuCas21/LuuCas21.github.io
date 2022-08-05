@@ -200,8 +200,6 @@ pt_button.addEventListener('click', ptTranslation);
 
 const accordion_div = document.querySelectorAll('.accord--');
 
-const x = window.matchMedia('(max-width: 900px)');
-
 // Mostrar Projetos
 
 const portfolioDiv2 = document.querySelectorAll('.portfolioDiv--2');
