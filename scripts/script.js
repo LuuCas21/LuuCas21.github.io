@@ -280,6 +280,7 @@ sectionObserver.observe(sections);
 function myFunction_10(y) {
     if (y.matches) { // If media query matches
       sectionObserver.unobserve(sections);
+      sections.classList.remove('section--hidden');
     } else {
       sectionObserver.observe(sections);
     }
