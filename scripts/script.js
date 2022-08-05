@@ -202,19 +202,6 @@ const accordion_div = document.querySelectorAll('.accord--');
 
 const x = window.matchMedia('(max-width: 900px)');
 
-function myFunction(x) {
-    for(let i = 0; i < accordion_div.length; i++) {
-        if(x.matches) {
-            accordion_div[i].style.display = 'block';
-        }
-    };
-};
-
-//myFunction(x);
-x.addListener(myFunction);
-
-myFunction(x);
-
 // Mostrar Projetos
 
 const portfolioDiv2 = document.querySelectorAll('.portfolioDiv--2');
