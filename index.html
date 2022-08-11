@@ -139,13 +139,13 @@
 </div>
 <!-- End About -->
 <!-- Portfolio -->
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav"> 
 <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
 <h2 style="border-bottom:3px solid var(--color11)" id="title" class="display-6 w-50 text-light text-center m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Projetos" data-english="Projects" >Projetos</h2>
 <div id="portfolio_list" class="w-100 h-auto d-flex  justify-content-center flex-wrap mt-5 mb-5"> <!-- Flex Wrap -->
 <div id="portfolio--" class="w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4">
-        <img src="/img/portfolio--1.png">
+        <img data-src="/img/portfolio--1.png" class="image-- lazy-img">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center eng--1 pt--1 title" data-portuguese="Salão do Brooklyn" data-english="Brooklyn Hair saloon">Salão do Brooklyn</h4>
@@ -159,7 +159,7 @@
 </div>
 <div id="portfolio--"class="w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4">
-        <img src="/img/portfolio--2.png">
+        <img data-src="/img/portfolio--2.png" class="image-- lazy-img">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center title">5 Senses Art</h4>
@@ -173,7 +173,7 @@
 </div>
 <div id="portfolio--"class="w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4">
-        <img src="/img/portfolio--3.png">
+        <img data-src="/img/portfolio--3.png" class="image-- lazy-img">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center eng-8 ptg-8 title eng--1 pt--1" data-portuguese="Orkut - Página Login" data-english="Orkut - Login Page">Orkut - Página Login</h4>
@@ -188,7 +188,7 @@
 
 <div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4">
-        <img src="/img/CodePro.png">
+        <img data-src="/img/CodePro.png" class="image-- lazy-img">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center eng-20 ptg-20 title eng--1 pt--1" data-portuguese="CodePro - Página Login" data-english="CodePro - Login Page">CodePro - Página Login</h4>
@@ -203,7 +203,7 @@
 <!-- Edit -->
 <div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4">
-        <img src="/img/portfolio--5.png">
+        <img data-src="/img/portfolio--5.png" class="image-- lazy-img">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center eng-22 ptg-22 title eng--1 pt--1" data-portuguese="Nobre Arquitetura - Portfólio" data-english="Noble Architecture - Portfolio">Nobre Arquitetura - Portfólio</h4>
@@ -217,7 +217,7 @@
 </div>
 <div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4"> 
-        <img src="/img/portfolio--6.png">
+        <img data-src="/img/portfolio--6.png" class="image-- lazy-img">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center eng-22 ptg-22 title">Epic Flix</h4>
@@ -231,7 +231,7 @@
 </div>
 <div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
     <div id="image--" class="mt-4"> 
-        <img src="/img/portfolio--7.png">
+        <img data-src="/img/portfolio--7.png" class="image-- lazy-img">
     </div>
     <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
         <h4 class="fw-bold text-center eng-22 ptg-22 title">Blog - Lucas Souza</h4>
@@ -240,6 +240,20 @@
         <div id="checkPort" class="d-flex justify-content-center mt-5">
             <button type="button" id="button--3" onclick="anchor_18()" class="btn btn-light me-2 fw-bold">Live</button>
             <button type="button" id="button--4" onclick="anchor_19()" class="btn btn-light fw-bold">Repo</button>
+        </div>
+    </div>
+</div>
+<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
+    <div id="image--" class="mt-4"> 
+        <img data-src="/img/portfolio--9.png" class="image-- lazy-img">
+    </div>
+    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
+        <h4 class="fw-bold text-center eng-22 ptg-22 title">To Do List</h4>
+        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
+        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
+        <div id="checkPort" class="d-flex justify-content-center mt-5">
+            <button type="button" id="button--3" onclick="anchor_20()" class="btn btn-light me-2 fw-bold">Live</button>
+            <button type="button" id="button--4" onclick="anchor_21()" class="btn btn-light fw-bold">Repo</button>
         </div>
     </div>
 </div>
