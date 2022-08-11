@@ -102,6 +102,14 @@ function anchor_19() {
     window.open('https://github.com/LuuCas21/Blog-Pessoal');
 }
 
+function anchor_20() {
+    window.open('https://personaltodolistweb.netlify.app');
+}
+
+function anchor_21() {
+    window.open('https://github.com/LuuCas21/To-Do-List');
+}
+
 const pt_button = document.getElementById('pt');
 const eng_button = document.getElementById('eng');
 
@@ -277,10 +285,54 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 sectionObserver.observe(sections);
 
-function myFunction_10(y) {
+
+  const images = document.querySelectorAll('.image--');
+
+  const lazyImageObserver = function(entries, observer) {
+    entries.forEach(entry => {
+        console.log(entry);
+        if(!entry.isIntersecting) return;
+
+        console.log(entry);
+        const getSRC = entry.target.dataset.src;
+        entry.target.src = getSRC;
+
+        entry.target.addEventListener('load', function() {
+        entry.target.classList.remove('lazy-img');
+        })
+
+        observer.unobserve(entry.target);
+    })
+  }
+
+  const imageObserver = new IntersectionObserver(lazyImageObserver, {
+    root: null,
+    threshold: 0,
+  });
+
+  images.forEach(imgs => {
+    imageObserver.observe(imgs);
+  })
+
+
+  function myFunction_10(y) {
     if (y.matches) { // If media query matches
       sectionObserver.unobserve(sections);
       sections.classList.remove('section--hidden');
+
+      images.forEach(imgs => {
+      imageObserver.unobserve(imgs);
+      imgs.classList.remove('lazy-img');
+      imgs.src = imgs.getAttribute('data-src');
+      })
+
+
+    } else {
+      sectionObserver.observe(sections);
+
+      images.forEach(imgs => {
+      imageObserver.observe(imgs);
+      })
     }
   }
   
