@@ -30,21 +30,6 @@ const button_1 = document.getElementById('button--3');
 const button_2 = document.getElementById('button--4');
 const button_3 = document.getElementById('button--5');
 
-function anchor_1() {
-    window.open('https://salaodobrooklyn.netlify.app');
-}
-
-function anchor_2() {
-    window.open('https://github.com/LuuCas21/salaodobrooklyn');
-}
-
-function anchor_3() {
-    window.open('https://fivesensesart.netlify.app/?');
-}
-
-function anchor_4() {
-    window.open('https://github.com/LuuCas21/imageGallery');
-}
 
 function anchor_5() {
     window.open('https://www.linkedin.com/in/lucassouza200/');
@@ -54,60 +39,20 @@ function anchor_6() {
     window.open('https://github.com/LuuCas21');
 }
 
-function anchor_7() {
-    window.open('https://orkut-br.netlify.app');
-}
-
-function anchor_8() {
-    window.open('https://github.com/LuuCas21/OrkutLoginPage');
-}
-
 function anchor_10() {
     window.open('https://t.me/LuuCas200')
-}
-
-function anchor_11() {
-    window.open('https://codeprologin.netlify.app')
-}
-
-function anchor_12() {
-    window.open('https://github.com/LuuCas21/codePro/tree/main/Login%20Page');
 }
 
 function anchor_13() {
     window.open('./img/MeuCurrículo.pdf')
 }
 
-function anchor_14() {
-    window.open('https://architectportfolio.netlify.app');
-};
-
-function anchor_15() {
-    window.open('https://github.com/LuuCas21/NobreArquitetura');
-};
-
-function anchor_16() {
-    window.open('https://epicflix.netlify.app');
-};
-
-function anchor_17() {
-    window.open('https://github.com/LuuCas21/LoukoFlix');
-};
-
-function anchor_18() {
-    window.open('https://lucassouzadev.netlify.app/index.html');
+function anchor_live(anchor) {
+    window.open(anchor);
 }
 
-function anchor_19() {
-    window.open('https://github.com/LuuCas21/Blog-Pessoal');
-}
-
-function anchor_20() {
-    window.open('https://personaltodolistweb.netlify.app');
-}
-
-function anchor_21() {
-    window.open('https://github.com/LuuCas21/To-Do-List');
+function anchor_repository(anchor) {
+    window.open(anchor);
 }
 
 const pt_button = document.getElementById('pt');
