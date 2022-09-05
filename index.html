@@ -4,302 +4,262 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aqui você encontrará meus projetos já feitos e também meios para entrar em contato">
     <meta name="author" content="Lucas Rosa de Souza">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <meta name="description" content="Portfólio">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
     <title>Lucas R. de Souza | Portfólio</title>
 </head>
 <body>
-<div id="container" class="w-100 h-100">
-<!-- Header -->
-<div id="header" class="w-100 h-auto">
-    <div id="navbar" class="w-100 h-auto d-flex justify-content-end">
-        <div class="w-auto h-auto d-flex justify-content-evenly me-4 mt-2">
-            <span id="pt" style="color:var(--color12)" class="pt fw-bold fs-5 p-2 active">PT</span>
-            <span style="color:var(--color4)" class="fw-bold fs-5 p-2">/</span>
-            <span id="eng" style="color:var(--color12)" class="eng fw-bold fs-5 p-2">EN</span>
-        </div>
-    </div>
-</div>
-<!-- End Header -->
-<!-- Body -->
-<div id="body_content" class="w-100 h-auto d-flex flex-column section--hidden section">
-    <div id="logo--side" class="w-50 h-auto mt-1 p-5 align-self-center">
-        <img src="/img/LS3.png" class="m-0 m-auto d-block">
-    </div>
-    <div id="introduction" class="w-100 h-50">
-        <p class="display-2 text-center fw-bold">Lucas Souza</p>
-        <p style="color:var(--color11)" class="fs-5 text-center eng--1 pt--1" data-portuguese="Desenvolvedor Front - end" data-english="Front - end Developer">Desenvolvedor Front - end</p>
-    <div id="information" class="w-100 h-auto d-flex justify-content-center">
-        <button type="button" id="button--1" onclick="openNav()" class="btn fs-4 fw-bold me-1 eng--1 pt--1" data-portuguese="Projetos" data-english="Projects">Projetos</button>
-        <button type="button" id="button--1" onclick="openNav_3()" class="btn fs-4 fw-bold eng--1 pt--1" data-portuguese="Contato" data-english="Contact">Contato</button>
-        <button type="button" id="button--1" onclick="openNav_2()" class="btn fs-4 fw-bold ms-1 eng--1 pt--1" data-portuguese="Sobre" data-english="About">Sobre</button>
-    </div>
-    </div>
-</div>
-<!-- About -->
-<div id="sobre_div" class="side_sobre ">
-    <a href="#" class="closebtn" onclick="closeNav_2()">&times;</a>
-    <h2 style="border-bottom:3px solid var(--color11)" id="title" class="display-6 w-50 text-center text-light m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Sobre" data-english="About">Sobre</h2> 
-    <div id="perfil_description" class="w-100 h-auto mb-5 mt-5 d-flex justify-content-center">
-        <div id="whoamI" class="w-50 h-auto me-5">
-            <!--<div id="picture" class="w-50 h-75 m-4"></div> -->
-            <div id="me" style="text-align:justify;padding:20px;color:var(--color4)" id="whoami" class="w-100 h-auto d-flex">
-                <div id="imageMe" class="w-auto">
-                    <img class="ms-5 mt-1" src="/img/eu2.jpg" width="160" height="170">
+    <div id="container">
+        <!-- Header -->
+        <div id="header">
+            <div id="logo">
+                <img src="/imgs/logo_menu6.png">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a class="anchor_link" href="#container-2" data-portuguese="Projetos" data-english="Projects">Projetos</a></li>
+                    <li><a class="anchor_link" href="#container-3" data-portuguese="Sobre" data-english="About">Sobre</a></li>
+                    <li><a class="anchor_link" href="#container-4" data-portuguese="Contato" data-english="Contact">Contato</a></li>
+                </ul>
+            </div>
+            <div id="dropdown_menu">
+                <div id="button_div">
+                <button type="button" id="dropdown_button" class="fa fa-bars" onclick="dropdown_content()"></button>
                 </div>
-                <div id="me-1" class="w-100">
-                <p class="display-6 fw-bold mt-5 text-center">Lucas Souza</p>
-                <p style="color:var(--color11)" class="fs-6 ms-1 text-center eng--1 pt--1" data-portuguese="| Desenvolvedor Front - end" data-english="| Front - end Developer">| Desenvolvedor Front - end</p>
-                </div>
-            </div>-->
-            <div id="descriptionAboutMe" class="w-100 h-auto ">
-            <p class="fs-5 ptg-18 eng--1 pt--1" data-portuguese="Me chamo Lucas, e moro no Rio. Há pouco tempo engressei na área de Desenvolvedor Front end. Estudar é praticamente um Hobby para mim
-            e por este motivo que acabei me apaixonando pela área de tecnologia e sei que cada Desenvolvedor deve estar sempre informado de novas atualizações e
-            tecnologias do momento, e sei que na Internet há uma ampla quantidade de conteúdos disponíveis fazendo com que eu consiga aprender qualquer coisa."
-            
-            data-english="My name is Lucas, and I live in Rio. It's been just recently I got myself into the Front-end web development. Studying is like a Hobby for me and because of that 
-            I fell in love for that tech field and I am sure that every developer must be always up-to-date about new updates as well as trending technologies of the moment, and also 
-            I am sure that in the internet there are plenty of available contents allowing me to learn anything I want.">
-            
-            Me chamo Lucas, e moro no Rio. Há pouco tempo engressei na área de Desenvolvedor Front end. Estudar é praticamente um Hobby para mim
-            e por este motivo que acabei me apaixonando pela área de tecnologia e sei que cada Desenvolvedor deve estar sempre informado de novas atualizações e
-            tecnologias do momento, e sei que na Internet há uma ampla quantidade de conteúdos disponíveis fazendo com que eu consiga aprender qualquer coisa.</p>
-            
-            </div> 
-        </div>
-        <div id="tools" style="margin-top:25px !important" class="w-25 h-75">
-        <div class="accordion accordion-flush">
-            <div style="background-color:var(--color2);border:none !important" class="accordion-item">
-                <h2 class="accordion-header">
-                    <button id="accordion_button" type="button" class="accordion-button fs-5" data-bs-target="#accordionOne" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordionOne"><span style="color:var(--color11)" class="devicon-html5-plain me-3 fs-1"></span>HTML</button>
-                </h2>
-                <div class="accordion-collapse collapse accord--" id="accordionOne">
-                    <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 pt--3"><span style="color:var(--color11)">HTML</span> me permite criar toda a parte <span style="color:var(--color11)">esquelética</span> do meu site e também criar o <span style="color:var(--color11)">conteúdo</span> incluso nele.</p>
-                        <p class="fs-5 eng--3 disappear"><span style="color:var(--color11)">HTML</span> allows me to create the whole website's <span id="green" style="color:var(--color11)">body</span> as well as creating the <span id="green" style="color:var(--color11)">content</span> within it.</p>
-                    </div>
+                <div id="dropdown_content" class="dropdown_content">
+                    <ul>
+                        <li><a class="anchor_link anchor_link-2" href="#container-2">Projetos</a></li>
+                        <li><a class="anchor_link anchor_link-2" href="#container-3">Sobre</a></li>
+                        <li><a class="anchor_link anchor_link-2" href="#container-4">Contato</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="accordion accordion-flush mt-2">
-            <div style="background-color:var(--color2);border:none !important" class="accordion-item">
-                <h2 class="accordion-header">
-                    <button id="accordion_button" type="button" class="accordion-button fs-5" data-bs-target="#accordionTwo" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordionTwo"><span style="color:var(--color11)" class="devicon-css3-plain me-3 fs-1"></span>CSS</button>
-                </h2>
-                <div class="accordion-collapse collapse accord--" id="accordionTwo">
-                    <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 pt--3"><span style="color:var(--color11)">CSS</span> me permite trabalhar com vastos aspectos de um site, variando de <span style="color:var(--color11)">estilização</span> até <span style="color:var(--color11)">responsividade</span>.
-                        Ele me permite trabalhar com o <span style="color:var(--color11)">estilo</span> da página e seus <span style="color:var(--color11)">efeitos</span> e também ajustar a todas as <span style="color:var(--color11)">resoluções</span>.</p>
-                        <p class="fs-5 eng--3 disappear"><span style="color:var(--color11)">CSS</span> allows me to work with a big amount of a website's aspect, ranging from <span style="color:var(--color11)">styling</span> to <span style="color:var(--color11)">responsiveness</span> It allows me to work with the <span style="color:var(--color11)">style</span> of the page as well as its <span style="color:var(--color11)">effects</span> and also align it to any <span style="color:var(--color11)">resolution</span>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion accordion-flush mt-2">
-            <div style="background-color:var(--color2);border:none !important" class="accordion-item">
-                <h2 class="accordion-header">
-                    <button id="accordion_button" type="button" class="accordion-button fs-5" data-bs-target="#accordionThree" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordionThree"><span style="color:var(--color11)" class="devicon-javascript-plain me-3 fs-1"></span>JavaScript</button>
-                </h2>
-                <div class="accordion-collapse collapse accord--" id="accordionThree">
-                    <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 pt--3"><span style="color:var(--color11)">Javascript</span> torna a página mais <span style="color:var(--color11)">interativa</span> com o usuário. Assim consigo deixar o site mais <span style="color:var(--color11)">dinâmico</span> e <span style="color:var(--color11)">interativo</span>.</p>
-                        <p class="fs-5 eng--3 disappear">Javascript allows the web page to be more <span style="color:var(--color11)">interactive</span> with the user. This way I can make a more <span style="color:var(--color11)">dynamic</span> and <span style="color:var(--color11)">interactive</span> website as well.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion accordion-flush mt-2">
-            <div style="background-color:var(--color2);border:none !important" class="accordion-item">
-                <h2 class="accordion-header">
-                    <button id="accordion_button" type="button" class="accordion-button fs-5" data-bs-target="#accordionFive" data-bs-toggle="collapse" aria-expanded="true" aria-controls="accordionFive"><span style="color:var(--color11)" class="devicon-react-plain me-3 fs-1"></span>React</button>
-                </h2>
-                <div class="accordion-collapse collapse accord--" id="accordionFive">
-                    <div id="accordion_body" class="accordion-body">
-                        <p class="fs-5 pt--3"><span style="color:var(--color11)">React</span> é um framework <span style="color:var(--color11)">JavaScript</span> criado pelo <span style="color:var(--color11)">Facebook</span> e que comecei a estudar há pouco tempo e ainda estou cobrindo a parte dos fundamentos. Ele me permitirá escrever códigos Javascript mais <span style="color:var(--color11)">rápidos</span> e de maior <span style="color:var(--color11)">qualidade</span>.</p>
-                        <p class="fs-5 eng--3 disappear"><span style="color:var(--color11)">React</span> is a <span style="color:var(--color11)">Javascript framework</span> created by <span style="color:var(--color11)">Facebook</span> and that I just started out to learn and I'm still covering the fundamental parts. It will allow me to write <span style="color:var(--color11)">fast</span> and <span style="color:var(--color11)">better-quality</span> javascript coding.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion accordion-flush mt-2">
-            <div style="background-color:var(--color2);border:none !important" class="accordion-item">
-                <h2 class="accordion-header">
-                    <button id="accordion_exception" id="accordion_button" type="button" class="accordion-button fs-5 bTn_exception" onclick="anchor_13()"><span style="color:var(--color11)" class="fa fa-file-pdf-o me-3 fs-1"></span>Currículo</button>
-                </h2>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-</div>
-<!-- End About -->
-<!-- Portfolio -->
-<div id="mySidenav" class="sidenav"> 
-<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-<h2 style="border-bottom:3px solid var(--color11)" id="title" class="display-6 w-50 text-light text-center m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Projetos" data-english="Projects" >Projetos</h2>
-<div id="portfolio_list" class="w-100 h-auto d-flex  justify-content-center flex-wrap mt-5 mb-5"> <!-- Flex Wrap -->
-<div id="portfolio--" class="w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4">
-        <img data-src="/img/portfolio--1.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng--1 pt--1 title" data-portuguese="Salão do Brooklyn" data-english="Brooklyn Hair saloon">Salão do Brooklyn</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> Bootstrap</p>
-        <div id="checkPort" class="w-100 h-auto d-flex justify-content-center mt-5">
-            <button type="button" id="button--3" onclick="anchor_live('https://salaodobrooklyn.netlify.app')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--4" onclick="anchor_repository('https://github.com/LuuCas21/salaodobrooklyn')" class="btn btn-light fw-bold">Repo</button>
-        </div>
-    </div>
-</div>
-<div id="portfolio--"class="w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4">
-        <img data-src="/img/portfolio--2.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center title">5 Senses Art</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> Bootstrap</p>
-        <div id="checkPort" class="d-flex justify-content-center mt-5">
-            <button type="button" id="button--5" onclick="anchor_live('https://fivesensesart.netlify.app/?')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--6" onclick="anchor_repository('https://github.com/LuuCas21/imageGallery')" class="btn btn-light fw-bold">Repo</button>
-        </div>
-    </div>
-</div>
-<div id="portfolio--"class="w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4">
-        <img data-src="/img/portfolio--3.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-8 ptg-8 title eng--1 pt--1" data-portuguese="Orkut - Página Login" data-english="Orkut - Login Page">Orkut - Página Login</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS</p>
-        <div id="checkPort" class="d-flex justify-content-center mt-5">
-            <button type="button" id="button--3" onclick="anchor_live('https://orkut-br.netlify.app')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--4" onclick="anchor_repository('https://github.com/LuuCas21/OrkutLoginPage')" class="btn btn-light fw-bold">Repo</button>
-        </div>
-    </div>
-</div>
+        <!-- Final Header -->
 
-<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4">
-        <img data-src="/img/CodePro.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-20 ptg-20 title eng--1 pt--1" data-portuguese="CodePro - Página Login" data-english="CodePro - Login Page">CodePro - Página Login</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
-        <div id="checkPort" class="d-flex justify-content-center mt-5">
-            <button type="button" id="button--3" onclick="anchor_live('https://codeprologin.netlify.app')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--4" onclick="anchor_repository('https://github.com/LuuCas21/codePro/tree/main/Login%20Page')" class="btn btn-light fw-bold">Repo</button>
+        <!-- Main Page -->
+        <div id="mainPage">
+            <!--<div id="languageOption"></div>-->
+            <p id="myNameTitle">Lucas Souza</p>
+            <p id="subTitle" data-portuguese="Desenvolvedor Front - end" data-english="Front - end Developer">Desenvolvedor Front - end</p>
+            <div id="socialMedia_buttons">
+                <button tpe="button" id="social_media_button" onclick="social_media_anchor('https://www.linkedin.com/in/lucassouza200/')">LINKEDIN</button>
+                <button tpe="button" id="social_media_button" onclick="social_media_anchor('https://github.com/LuuCas21')">GITHUB</button>
+                <button type="button" class="fa fa-file-pdf-o" onclick="social_media_anchor('/imgs/MeuCurrículo.pdf')"> <p>CURRÍCULO</p></button>
+            </div>
         </div>
+        <!-- Final Main Page -->
     </div>
-</div>
-<!-- Edit -->
-<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4">
-        <img data-src="/img/portfolio--5.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-22 ptg-22 title eng--1 pt--1" data-portuguese="Nobre Arquitetura - Portfólio" data-english="Noble Architecture - Portfolio">Nobre Arquitetura - Portfólio</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
-        <div id="checkPort" class="d-flex justify-content-center mt-5">
-            <button type="button" id="button--3" onclick="anchor_live('https://architectportfolio.netlify.app')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--4" onclick="anchor_repository('https://github.com/LuuCas21/NobreArquitetura')" class="btn btn-light fw-bold">Repo</button>
+
+    <div id="container-2">
+        <div id="empty_space"></div>
+        <div id="header_title">
+            <p id="portfolio_title">Projetos</p>
         </div>
-    </div>
-</div>
-<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4"> 
-        <img data-src="/img/portfolio--6.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-22 ptg-22 title">Epic Flix</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
-        <div id="checkPort" class="d-flex justify-content-center mt-5">
-            <button type="button" id="button--3" onclick="anchor_live('https://epicflix.netlify.app')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--4" onclick="anchor_repository('https://github.com/LuuCas21/LoukoFlix')" class="btn btn-light fw-bold">Repo</button>
+        <div id="portfolio_gallery">
+            <!--<div id="divButton">
+                <button type="button" class="fa fa-long-arrow-left"></button>
+            </div>-->
+            <div id="gallery_slider">
+            
+                <div id="gallery--" class="gallery--">
+                    <div id="gallery_picture">
+                        <img src="/imgs/portfolio--1.png">
+                    </div>
+                    <div id="gallery_title">
+                        <p>Salão do Brooklyn</p>
+                    </div>
+                    <div id="gallery_stacks_used">
+                        <p class="gallery_portfolio_technology" data-portuguese="Tecnologias utilizadas" data-english="Technologies used:">Tecnologias utilizadas:</p>
+                    </div>
+                    <div id="gallery_stacks">
+                        <p>HTML | CSS | BOOTSTRAP</p>
+                    </div>
+                    <div id="gallery_buttons">
+                        <button type="button" id="live_button" class="live_button" data-anchor="https://salaodobrooklyn.netlify.app">Live</button>
+                        <button type="button" id="repo_button" class="repo_button">Repo</button>
+                    </div>
+                </div>
+                <div id="gallery--" class="gallery--">
+                    <div id="gallery_picture">
+                        <img src="/imgs/portfolio--2.png">
+                    </div>
+                    <div id="gallery_title">
+                        <p>Five Senses Art</p>
+                    </div>
+                    <div id="gallery_stacks_used">
+                        <p class="gallery_portfolio_technology" data-portuguese="Tecnologias utilizadas" data-english="Technologies used:">Tecnologias utilizadas:</p>
+                    </div>
+                    <div id="gallery_stacks">
+                        <p>HTML | CSS | BOOTSTRAP</p>
+                    </div>
+                    <div id="gallery_buttons">
+                        <button type="button" id="live_button" class="live_button" data-anchor="https://fivesensesart.netlify.app/?">Live</button>
+                        <button type="button" id="repo_button" class="repo_button">Repo</button>
+                    </div>
+                </div>
+                <div id="gallery--" class="gallery--">
+                    <div id="gallery_picture">
+                        <img src="/imgs/portfolio--3.png">
+                    </div>
+                    <div id="gallery_title">
+                        <p>Orkut - Página Login</p>
+                    </div>
+                    <div id="gallery_stacks_used">
+                        <p class="gallery_portfolio_technology" data-portuguese="Tecnologias utilizadas" data-english="Technologies used:">Tecnologias utilizadas</p>
+                    </div>
+                    <div id="gallery_stacks">
+                        <p>HTML | CSS</p>
+                    </div>
+                    <div id="gallery_buttons">
+                        <button type="button" id="live_button" class="live_button" data-anchor="https://orkut-br.netlify.app">Live</button>
+                        <button type="button" id="repo_button" class="repo_button">Repo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery_slider" class="gallery_slider--2 display_slider--2">
+                <div id="gallery--" class="gallery--2">
+                    <div id="gallery_picture">
+                        <img src="/imgs/portfolio--4.png">
+                    </div>
+                    <div id="gallery_title">
+                        <p>CodePro - Página Login</p>
+                    </div>
+                    <div id="gallery_stacks_used">
+                        <p class="gallery_portfolio_technology" data-portuguese="Tecnologias utilizadas" data-english="Technologies used:">Tecnologias utilizadas:</p>
+                    </div>
+                    <div id="gallery_stacks">
+                        <p>HTML | CSS | JAVASCRIPT</p>
+                    </div>
+                    <div id="gallery_buttons">
+                        <button type="button" id="live_button" class="live_button" data-anchor="https://codeprologin.netlify.app">Live</button>
+                        <button type="button" id="repo_button" class="repo_button">Repo</button>
+                    </div>
+                </div>
+
+                <div id="gallery--" class="gallery--2">
+                    <div id="gallery_picture">
+                        <img src="/imgs/portfolio--5.png">
+                    </div>
+                    <div id="gallery_title">
+                        <p>Nobre Arquitetura</p>
+                    </div>
+                    <div id="gallery_stacks_used">
+                        <p class="gallery_portfolio_technology" data-portuguese="Tecnologias utilizadas" data-english="Technologies used:">Tecnologias utilizadas:</p>
+                    </div>
+                    <div id="gallery_stacks">
+                        <p>HTML | CSS | JAVASCRIPT</p>
+                    </div>
+                    <div id="gallery_buttons">
+                        <button type="button" id="live_button" class="live_button" data-anchor="https://architectportfolio.netlify.app">Live</button>
+                        <button type="button" id="repo_button" class="repo_button">Repo</button>
+                    </div>
+                </div>
+
+                <div id="gallery--" class="gallery--2">
+                    <div id="gallery_picture">
+                        <img src="/imgs/portfolio--6.png">
+                    </div>
+                    <div id="gallery_title">
+                        <p>Epic Flix</p>
+                    </div>
+                    <div id="gallery_stacks_used">
+                        <p class="gallery_portfolio_technology" data-portuguese="Tecnologias utilizadas" data-english="Technologies used:">Tecnologias utilizadas:</p>
+                    </div>
+                    <div id="gallery_stacks">
+                        <p>HTML | CSS | JAVASCRIPT</p>
+                    </div>
+                    <div id="gallery_buttons">
+                        <button type="button" id="live_button" class="live_button" data-anchor="https://epicflix.netlify.app">Live</button>
+                        <button type="button" id="repo_button" class="repo_button">Repo</button>
+                    </div>
+                </div>
+
+                <div id="gallery--" class="gallery--2">
+                    <div id="gallery_picture">
+                        <img src="/imgs/portfolio--7.png">
+                    </div>
+                    <div id="gallery_title">
+                        <p>To Do List</p>
+                    </div>
+                    <div id="gallery_stacks_used">
+                        <p class="gallery_portfolio_technology" data-portuguese="Tecnologias utilizadas" data-english="Technologies used:">Tecnologias utilizadas:</p>
+                    </div>
+                    <div id="gallery_stacks">
+                        <p>HTML | CSS | JAVASCRIPT</p>
+                    </div>
+                    <div id="gallery_buttons">
+                        <button type="button" id="live_button" class="live_button" data-anchor="https://personaltodolistweb.netlify.app">Live</button>
+                        <button type="button" id="repo_button" class="repo_button">Repo</button>
+                    </div>
+                </div>
+            </div>
+            <div id="divButton">
+                <button type="button" class="fa fa-chevron-down"></button>
+                <button type="button" class="fa fa-chevron-up display_button_slider"></button>
+            </div>
         </div>
+        <!--<div id="scroll_top">
+            <button type="button" class="fa fa-chevron-up scroll_top"></button>
+        </div>-->
     </div>
-</div>
-<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4"> 
-        <img data-src="/img/portfolio--7.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-22 ptg-22 title">Blog - Lucas Souza</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
-        <div id="checkPort" class="d-flex justify-content-center mt-5">
-            <button type="button" id="button--3" onclick="anchor_live('https://lucassouzadev.netlify.app/index.html')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--4" onclick="anchor_repository('https://github.com/LuuCas21/Blog-Pessoal')" class="btn btn-light fw-bold">Repo</button>
+    <div id="container-3">
+        <div id="empty_space"></div>
+        <div id="header_title_3">
+            <p id="about_title">Sobre</p>
         </div>
-    </div>
-</div>
-<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4"> 
-        <img data-src="/img/portfolio--9.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-22 ptg-22 title">To Do List</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
-        <div id="checkPort" class="d-flex justify-content-center mt-5">
-            <button type="button" id="button--3" onclick="anchor_live('https://personaltodolistweb.netlify.app')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--4" onclick="anchor_repository('https://github.com/LuuCas21/To-Do-List')" class="btn btn-light fw-bold">Repo</button>
+        <div id="description">
+            <div id="picture_description">
+                <div id="myImage">
+                    <img src="/imgs/eu.jpg">
+                    <div id="myStacks">
+                    <p class="devicon-html5-plain"></p>
+                    <p class="devicon-css3-plain"></p>
+                    <p class="devicon-javascript-plain"></p>
+                    <p class="devicon-react-plain"></p>
+                    </div>
+                </div>
+                <div id="myDescription">
+                    <p id="title">Lucas Souza</p>
+                    <p id="subTitle">Desenvolvedor Front-end</p>
+                    <p>Me chamo Lucas, e moro no Rio. Há pouco tempo engressei na área de Desenvolvedor Front end.
+                    Estudar é praticamente um Hobby para mim e por este motivo que acabei me apaixonando pela área
+                    de tecnologia e sei que cada Desenvolvedor deve estar sempre informado de novas atualizações e
+                    tecnologias do momento, e sei que na Internet há uma ampla quantidade de conteúdos disponíveis
+                    fazendo com que eu consiga aprender qualquer coisa.</p>
+                </div>
+            </div>
         </div>
+        <!--<div id="scroll_top">
+            <button type="button" class="fa fa-chevron-up scroll_top"></button>
+        </div>-->
     </div>
-</div>
-<div id="portfolio--" class="portfolioDiv--2 disappear w-25 m-4" class="portfolioDiv--2 disappear w-25 h-75 bg-dark m-4 d-flex flex-column">
-    <div id="image--" class="mt-4"> 
-        <img data-src="/img/portfolio--10.png" class="image-- lazy-img">
-    </div>
-    <div id="description--" class="h-auto m-0 m-auto d-block mb-5 mt-3">
-        <h4 class="fw-bold text-center eng-22 ptg-22 title eng--1 pt--1" data-portuguese="Calculadora" data-english="Calculator">Calculadora</h4>
-        <p class="fs-5 fw-bold text-light text-center eng--2 pt--2 title">Tecnologias utilizadas:</p>
-        <p class="fs-5 fw-bold text-light text-center title">HTML <span style="color:var(--color3)">|</span> CSS <span style="color:var(--color3)">|</span> JavaScript</p>
-        <div id="checkPort" class="d-flex justify-content-center mt-5">
-            <button type="button" id="button--3" onclick="anchor_live('https://calculadoraweb-online.netlify.app')" class="btn btn-light me-2 fw-bold">Live</button>
-            <button type="button" id="button--4" onclick="anchor_repository('https://github.com/LuuCas21/Calculadora')" class="btn btn-light fw-bold">Repo</button>
+    <div id="container-4">
+        <div id="empty_space"></div>
+        <div id="header_title_4">
+            <p id="contact_title">Contato</p>
         </div>
-    </div>
-</div>
-</div>
-<div class="arrow_down--1 w-100 h-auto mb-5">
-    <button id="arrow_down" type="button" class="fa fa-angle-down"></button>
-</div>
-<div class="arrow_up--2 w-100 h-auto mb-5 disappear">
-    <button id="arrow_up" type="button" class="fa fa-angle-up"></button>
-</div>
-</div>
-<!-- End Portfolio -->
-<!-- Contact -->
-<div id="contact_div" class="side_contact">
-    <a href="#" class="closebtn" onclick="closeNav_3()">&times;</a>
-    <h2 id="title" style="border-bottom:3px solid var(--color11)" class="display-6 w-50 text-center text-light m-0 m-auto d-block p-5 eng--1 pt--1" data-portuguese="Contato" data-english="Contact">Contato</h2> <!-- style="margin-left:140px" -->
-    <div id="contact_list" class="w-75 h-auto mt-5 mb-5 d-flex justify-content-evenly">
-        <div id="emailForm">
+        <div id="contact_form">
+            <!--<div id="form">-->
             <form action="https://formsubmit.co/00950671ec60f8f735d3818ee0742b1b" method="POST">
-                <input type="text" id="name" name="Name" placeholder="Nome Completo" data-portuguese="Nome Completo" data-english="Full Name" class="engInput--1 ptInput--1" required>
+                <input type="text" id="name" name="Name" placeholder="Nome Completo" required>
                 <input type="email" id="email" name="Email" placeholder="Email" required>
-                <input type="text" id="subject" name="Subject" placeholder="Assunto" required data-portuguese="Assunto" data-english="Subject" class="engInput--1 ptInput--1">
-                <textarea type="message" id="message" name="Message" placeholder="Mensagem . . ." required data-portuguese="Mensagem . . ." data-english="Message . . ." class="engInput--1 ptInput--1"></textarea>
-                <button type="submit" data-portuguese="Enviar" data-english="Send" class="engInput--1 ptInput--1">Enviar</button>
+                <input type="text" id="subject" name="Subject" placeholder="Assunto" required>
+                <textarea placeholder="Mensagem . . ." name="Message"></textarea>
+                <button type="submit">Enviar</button>
             </form>
+            <!--</div>-->
         </div>
-    </div> 
-</div>
-<!-- End Contact -->
-<!-- End Body -->
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="/scripts/script.js"></script>
+        <!--<div id="scroll_top">
+            <button type="button" class="fa fa-chevron-up scroll_top"></button>
+        </div>-->
+    </div>
+    <div id="container-5"></div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
