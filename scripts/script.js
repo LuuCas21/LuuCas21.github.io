@@ -11,6 +11,7 @@ const prev_btn = document.querySelector('.fa-long-arrow-left');
 const dropdownBtn = document.querySelector('#dropdown_button');
 const open_gallery_arrow = document.querySelector('.fa-chevron-down');
 const close_gallery_arrow = document.querySelector('.fa-chevron-up');
+const logo_img = document.querySelector('#logo_image');
 
 // Tradução
 const languageBtn = document.querySelector('.fa-globe');
@@ -34,7 +35,13 @@ menuNav.addEventListener('click', function(e) {
     const div = e.target.getAttribute('href');
     document.querySelector(div).scrollIntoView({ behavior: 'smooth' });
     }
-})
+});
+
+logo_img.style.cursor = 'pointer';
+
+logo_img.addEventListener('click', function() {
+    container_1.scrollIntoView({behavior: 'smooth'});
+});
 
 // Social Media Links
 const social_media_anchor = function(link) {
