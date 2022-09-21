@@ -44,12 +44,25 @@ const social_media_anchor = function(link) {
 // Portfolio Links
 
 const live_btn = document.querySelectorAll('.live_button');
+const repo_btn = document.querySelectorAll('.repo_button');
 
 live_btn.forEach(liveBtn => {
     liveBtn.addEventListener('click', function(e) {
+        e.preventDefault();
         const getAttr = e.target.dataset.anchor;
 
         if (e.target.classList.contains('live_button')) {
+            window.open(getAttr);
+        }
+    })
+})
+
+repo_btn.forEach(repoBtn=> {
+    repoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const getAttr = e.target.dataset.anchor;
+
+        if (repoBtn.classList.contains('repo_button')) {
             window.open(getAttr);
         }
     })
@@ -161,3 +174,100 @@ close_gallery_arrow.addEventListener('click', function(e) {
         slider_2.classList.remove('display_slider--2');
     }
 })
+
+const imageGallery = document.querySelectorAll('.image');
+
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.25,
+};
+
+const callback = function(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && entry.target.className === 'image') {
+            const getUrl = entry.target.getAttribute('data-image');
+            if(getUrl) {
+                entry.target.src = getUrl;
+                observer.unobserve(entry.target);
+            }
+        }
+    })
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+imageGallery.forEach(imgs => {
+    observer.observe(imgs);
+});
+
+const selector = document.querySelector('#selector');
+const translate = document.querySelectorAll('.translate');
+const subject_input = document.querySelector('#subject');
+const name_input = document.querySelector('#name');
+const message_input = document.querySelector('#message');
+const menu_list = document.getElementsByTagName('a');
+
+const translator = function() {
+    const selector_input = selector.value;
+
+    switch (selector_input) {
+        case 'Português' :
+            translate.forEach(menuPT => {
+                const ptAttr = menuPT.getAttribute('data-portuguese');
+                menuPT.innerHTML = ptAttr;
+            });
+
+            for (let i = 0; i < menu_list.length; i++) {
+                const ptAttr = menu_list[i].getAttribute('data-portuguese');
+                menu_list[i].textContent = ptAttr;
+            }
+
+            subject_input.setAttribute('placeholder', 'Assunto');
+            name_input.setAttribute('placeholder', 'Nome');
+            message_input.setAttribute('placeholder', 'Mensagem . . .');
+
+        break;
+
+        case 'Inglês' :
+            translate.forEach(menuEN => {
+                const engAttr = menuEN.getAttribute('data-english');
+                menuEN.innerHTML = engAttr;
+            });
+
+            for (let i = 0; i < menu_list.length; i++) {
+                const engAttr = menu_list[i].getAttribute('data-english');
+                menu_list[i].textContent = engAttr;
+            }
+
+            subject_input.setAttribute('placeholder', 'Subject');
+            name_input.setAttribute('placeholder', 'Full Name');
+            message_input.setAttribute('placeholder', 'Message . . .');
+
+        break;
+    }
+};
+
+// No mobile o IntersectionObserver não irá funcionar, somente em desktop
+
+function disableObserver(y) {
+    if (y.matches) {
+        imageGallery.forEach(imgs => {
+            observer.unobserve(imgs);
+
+            const getSrc = imgs.getAttribute('data-image');
+            imgs.src = getSrc;
+        });
+
+    } else {
+        imageGallery.forEach(imgs => {
+            observer.observe(imgs);
+
+            imgs.src = '#';
+        });
+    }
+}
+
+const y = window.matchMedia('(max-width: 1000px)');
+disableObserver(y);
+y.addListener(disableObserver);
