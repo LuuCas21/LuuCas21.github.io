@@ -247,7 +247,6 @@ body {
     display:flex;
     justify-content:center;
     align-self:center;
-    
 }
 
 #container-2 > #portfolio_gallery > #divButton > .fa {
@@ -256,7 +255,7 @@ body {
     background-color:var(--color1);
     border:none;
     cursor:pointer;
-    height:50px;
+    /*height:50px;*/
     /*align-self:center;*/
 }
 
@@ -289,7 +288,7 @@ body {
 
 #container-2 > #portfolio_gallery > #gallery_slider > #gallery-- {
     width:30%;
-    height:400px;
+    height:370px; /*400px*/
     border:1px solid var(--color3);
     margin:8px;
     /*align-self:center;*/
@@ -402,8 +401,8 @@ body {
 }
 
 #container-2 > #portfolio_gallery > #gallery_slider > #gallery-- > #gallery_buttons > button {
-    width:40%;
-    height:50px;
+    width:30%;
+    height:35px;
     border:none;
     margin:5px;
     cursor:pointer;
