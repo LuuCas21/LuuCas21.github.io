@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+    <script src="https://kit.fontawesome.com/5e57003b44.js" crossorigin="anonymous"></script>
     <title>Lucas R. de Souza | Portfólio</title>
 </head>
 <body>
     <div id="container">
+        <div class="social_medias">
+            <i class="fa-brands fa-linkedin-in" onclick="social_media_anchor('https://www.linkedin.com/in/lucassouza200/')"></i>
+            <i class="fa-brands fa-github" onclick="social_media_anchor('https://github.com/LuuCas21')"></i>
+            <i class="fa-regular fa-file" onclick="social_media_anchor('/imgs/MeuCurrículo.pdf')"></i>
+        </div>
         <!-- Header -->
         <div id="header">
             <div id="logo">
@@ -21,14 +27,14 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li><a class="anchor_link" href="#container-2" data-portuguese="Projetos" data-english="Projects">Projetos</a></li>
-                    <li><a class="anchor_link" href="#container-3" data-portuguese="Sobre" data-english="About">Sobre</a></li>
-                    <li><a class="anchor_link" href="#container-4" data-portuguese="Contato" data-english="Contact">Contato</a></li>
+                    <li><a class="anchor_link" href="#container-2" data-portuguese="Projetos" data-english="Projects">PROJETO</a></li>
+                    <li><a class="anchor_link" href="#container-3" data-portuguese="Sobre" data-english="About">SOBRE</a></li>
+                    <li><a class="anchor_link" href="#container-4" data-portuguese="Contato" data-english="Contact">CONTATO</a></li>
                 </ul>
             </div>
             <div id="dropdown_menu">
                 <div id="button_div">
-                <button type="button" id="dropdown_button" class="fa fa-bars" onclick="dropdown_content()"></button>
+                <button type="button" id="dropdown_button" class="fa-solid fa-bars-staggered" onclick="dropdown_content()"></button>
                 </div>
                 <div id="dropdown_content" class="dropdown_content">
                     <ul>
@@ -49,7 +55,7 @@
             <div id="socialMedia_buttons">
                 <button type="button" id="social_media_button" class="linkedin" onclick="social_media_anchor('https://www.linkedin.com/in/lucassouza200/')">LINKEDIN</button>
                 <button type="button" id="social_media_button" class="github" onclick="social_media_anchor('https://github.com/LuuCas21')">GITHUB</button>
-                <button type="button" class="fa fa-file-pdf-o" onclick="social_media_anchor('/imgs/MeuCurrículo.pdf')"> <p class="translate" data-portuguese="CURRÍCULO" data-english="RESUME">CURRÍCULO</p></button>
+                <button type="button" class="fa-regular fa-file" onclick="social_media_anchor('/imgs/MeuCurrículo.pdf')"> <p class="translate" data-portuguese="CURRÍCULO" data-english="RESUME">CURRÍCULO</p></button>
             </div>
         </div>
         <!-- Final Main Page -->
@@ -58,7 +64,7 @@
     <div id="container-2">
         <div id="empty_space"></div>
         <div id="header_title">
-            <p id="portfolio_title" class="translate" data-portuguese="Projetos" data-english="Projects">Projetos</p>
+            <p id="portfolio_title" class="translate" data-portuguese="Projetos" data-english="Projects">PROJETO</p>
         </div>
         <div id="portfolio_gallery">
             <!--<div id="divButton">
@@ -311,7 +317,7 @@
     <div id="container-3">
         <div id="empty_space"></div>
         <div id="header_title_3">
-            <p id="about_title" class="translate" data-portuguese="Sobre" data-english="About">Sobre</p>
+            <p id="about_title" class="translate" data-portuguese="Sobre" data-english="About">SOBRE</p>
         </div>
         <div id="description">
             <div id="picture_description">
@@ -347,7 +353,7 @@
     <div id="container-4">
         <div id="empty_space"></div>
         <div id="header_title_4">
-            <p id="contact_title" class="translate" data-portuguese="Contato" data-english="Contact">Contato</p>
+            <p id="contact_title" class="translate" data-portuguese="Contato" data-english="Contact">CONTATO</p>
         </div>
         <div id="contact_form">
             <!--<div id="form">-->
