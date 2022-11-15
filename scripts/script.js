@@ -12,6 +12,7 @@ const dropdownBtn = document.querySelector('#dropdown_button');
 const open_gallery_arrow = document.querySelector('.fa-chevron-down');
 const close_gallery_arrow = document.querySelector('.fa-chevron-up');
 const logo_img = document.querySelector('#logo_image');
+const button_top = document.querySelector('.fa-arrow-up');
 
 // Tradução
 const languageBtn = document.querySelector('.fa-globe');
@@ -24,7 +25,13 @@ top_button.forEach(btn => {
 
         container_1.scrollIntoView({behavior: 'smooth'});
     })
-})
+});
+
+const takeMeTop = function(e) {
+    //e.preventDefault();
+
+    container_1.scrollIntoView( {behavior: 'smooth'} );
+}
 
 // Smooth Scroll
 
@@ -278,3 +285,13 @@ function disableObserver(y) {
 const y = window.matchMedia('(max-width: 1000px)');
 disableObserver(y);
 y.addListener(disableObserver);
+
+const coords = container_2.getBoundingClientRect();
+
+window.onscroll = function() {
+    if (window.pageYOffset >= coords.y) {
+        button_top.style.display = 'block';
+    } else {
+        button_top.style.display = 'none';
+    }
+}
