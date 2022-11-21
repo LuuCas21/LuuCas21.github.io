@@ -157,6 +157,12 @@ window.onscroll = function() {
     }
 
     prevScroll = posScroll;
+
+    if (window.pageYOffset >= coords.y) {
+        button_top.style.display = 'block';
+    } else {
+        button_top.style.display = 'none';
+    }
 }
 
 const slider_2 = document.querySelector('.gallery_slider--2');
@@ -288,10 +294,10 @@ y.addListener(disableObserver);
 
 const coords = container_2.getBoundingClientRect();
 
-window.onscroll = function() {
+/*window.onscroll = function() {
     if (window.pageYOffset >= coords.y) {
         button_top.style.display = 'block';
     } else {
         button_top.style.display = 'none';
     }
-}
+}*/
