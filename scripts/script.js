@@ -301,3 +301,22 @@ const coords = container_2.getBoundingClientRect();
         button_top.style.display = 'none';
     }
 }*/
+
+/*const textEl = document.querySelector('.text');
+const text = 'Desenvolvedor Front - end';
+let idx = 1;
+let speed = 100;
+
+writeText();
+
+function writeText() {
+    textEl.innerText = text.slice(0, idx);
+
+    idx++;
+
+    if (idx > text.length) {
+        idx = text.length;
+    }
+
+    setTimeout(writeText, speed);
+}*/
