@@ -534,7 +534,7 @@ body {
 } 
 
 #container-3 > #description > #picture_description {
-    width:70%;
+    width:80%;
     height:100%;
     align-self:center;
     display:flex;
@@ -978,5 +978,26 @@ body {
 
     .fa-arrow-up {
         display:none !important;
+    }
+}
+
+@media screen and (max-width:410px) {
+    #container-3 > #description > #picture_description > #myImage {
+        width:250px;
+        height:250px;
+        margin-bottom:50px;
+    }
+
+    #container-3 > #description > #picture_description > #myImage > #myStacks {
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-wrap:wrap;
+        margin:15px 0;
+    }
+
+    #container-3 > #description > #picture_description > #myImage > #myStacks > p {
+        font-size:40px;
+        margin-bottom:15px;
     }
 }
