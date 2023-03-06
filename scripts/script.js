@@ -60,6 +60,16 @@ const social_media_anchor = function(link) {
 const live_btn = document.querySelectorAll('.live_button');
 const repo_btn = document.querySelectorAll('.repo_button');
 
+const eyeBtn = document.querySelectorAll('.fa-eye');
+
+eyeBtn.forEach(ey => {
+    ey.addEventListener('click', (e) => {
+        const parentEl = e.target.parentNode;
+        const getAttrAnchor = parentEl.getAttribute('data-anchor');
+        window.open(getAttrAnchor);
+    })
+})
+
 live_btn.forEach(liveBtn => {
     liveBtn.addEventListener('click', function(e) {
         e.preventDefault();
