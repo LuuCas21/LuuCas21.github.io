@@ -930,11 +930,19 @@ body {
     background-color:var(--color1);
     border-top:1px solid var(--color4);
     display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#container-5 > h3 {
+    letter-spacing:1px;
+    color:var(--color2);
+    font-size:17px;
 }
 
 
 ::-webkit-scrollbar {
-    width:5px;
+    width:8px;
 }
 
 ::-webkit-scrollbar-track {
