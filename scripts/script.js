@@ -61,9 +61,18 @@ const live_btn = document.querySelectorAll('.live_button');
 const repo_btn = document.querySelectorAll('.repo_button');
 
 const eyeBtn = document.querySelectorAll('.fa-eye');
+const codeBtn = document.querySelectorAll('.fa-code');
 
 eyeBtn.forEach(ey => {
     ey.addEventListener('click', (e) => {
+        const parentEl = e.target.parentNode;
+        const getAttrAnchor = parentEl.getAttribute('data-anchor');
+        window.open(getAttrAnchor);
+    })
+});
+
+codeBtn.forEach(cod => {
+    cod.addEventListener('click', (e) => {
         const parentEl = e.target.parentNode;
         const getAttrAnchor = parentEl.getAttribute('data-anchor');
         window.open(getAttrAnchor);
